@@ -42,7 +42,7 @@ export function AboutSection() {
         </svg>
       </div>
 
-      <div className="container px-4 md:px-6 relative z-10">
+      <div className="container px-4 md:px-6 relative z-10 mt-2">
         <div className="text-center space-y-4 mb-16">
           <Badge
             variant="secondary"

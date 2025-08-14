@@ -50,7 +50,6 @@ export function Header() {
             href="#sobre"
             className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1"
           >
-            <TreePine className="w-4 h-4" />
             Quem Somos
           </Link>
           <Link href="#funcionamento" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -68,7 +67,7 @@ export function Header() {
           <ThemeToggle />
           <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg">
             <Leaf className="mr-2 h-4 w-4" />
-            Apoie o projeto
+            Acessar plataforma
           </Button>
         </nav>
 
@@ -120,7 +119,8 @@ export function Header() {
               Aplicativo
             </Link>
             <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg mt-4">
-              Apoie o projeto
+              <Leaf className="mr-2 h-4 w-4" />
+              Acessar plataforma
             </Button>
           </nav>
         </div>
