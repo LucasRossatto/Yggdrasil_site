@@ -1,6 +1,9 @@
+"use client"
+
 import { Award, Leaf, TreePine, Users } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { Card, CardDescription, CardHeader } from "../ui/card";
+import CountUp from "../reactBits/CountUp";
 
 export function ImpactSection() {
   return (
@@ -22,25 +25,25 @@ export function ImpactSection() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                number: "10,000+",
+                number: 10000,
                 label: "Árvores Tokenizadas",
                 icon: TreePine,
                 color: "from-green-500 to-emerald-500",
               },
               {
-                number: "5,000",
+                number: 5000,
                 label: "Toneladas CO₂ Compensadas",
                 icon: Leaf,
                 color: "from-blue-500 to-indigo-500",
               },
               {
-                number: "1,200+",
+                number: 1200,
                 label: "Fiscais Ativos",
                 icon: Users,
                 color: "from-purple-500 to-violet-500",
               },
               {
-                number: "150+",
+                number: 150,
                 label: "Especialistas Certificados",
                 icon: Award,
                 color: "from-amber-500 to-orange-500",
@@ -48,7 +51,7 @@ export function ImpactSection() {
             ].map((stat, index) => (
               <Card
                 key={index}
-                className="border-border shadow-lg text-center bg-card"
+                className="border-border z-10 shadow-lg text-center bg-card"
               >
                 <CardHeader>
                   <div
@@ -56,9 +59,8 @@ export function ImpactSection() {
                   >
                     <stat.icon className="h-8 w-8 text-white" />
                   </div>
-                  <div className="text-4xl font-bold text-foreground mb-2">
-                    {stat.number}
-                  </div>
+                  <CountUp duration={0.3} to={stat.number}></CountUp>
+
                   <CardDescription className="text-lg font-medium text-muted-foreground">
                     {stat.label}
                   </CardDescription>

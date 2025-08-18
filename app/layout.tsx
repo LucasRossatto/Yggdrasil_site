@@ -28,7 +28,7 @@ export default function RootLayout({
         `}</style>
       </head>
       <body>
-      <ThemeProvider attribute="class" defaultTheme="light"  disableTransitionOnChange={false}>
+      <ThemeProvider attribute="class" defaultTheme="dark"  disableTransitionOnChange={false}>
           {children}
         </ThemeProvider>
       </body>

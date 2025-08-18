@@ -142,15 +142,15 @@ export function AppSection() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     size="lg"
-                    className="bg-primary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground shadow-lg flex-1"
+                    className="bg-primary sm: py-4 hover:from-primary/90 hover:to-secondary/90 text-primary-foreground shadow-lg flex-1"
                   >
                     <Download className="mr-2 h-5 w-5" />
                     Download iOS
                   </Button>
                   <Button
                     size="lg"
-                    variant="outline"
-                    className="border-primary text-primary hover:bg-primary/10 flex-1 bg-transparent"
+                    variant="default"
+                    className="border-primary hover:bg-foreground sm: py-4  text-primary flex-1 bg-foreground"
                   >
                     <Download className="mr-2 h-5 w-5" />
                     Download Android
