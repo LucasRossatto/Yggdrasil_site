@@ -79,7 +79,7 @@ export function TeamSection() {
             ].map((member, index) => (
               <Card
                 key={index}
-                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
+                className="border-0 z-10 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
               >
                 <CardHeader className="pb-4">
                   <div className="relative mx-auto mb-4">
