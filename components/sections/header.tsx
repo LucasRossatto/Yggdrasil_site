@@ -1,28 +1,30 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { Leaf, Menu, X, TreePine } from "lucide-react"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { Leaf, Menu, X, TreePine } from "lucide-react";
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border" : "bg-transparent"
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <div className=" flex h-20 items-center justify-between px-4 md:px-6">
@@ -41,7 +43,6 @@ export function Header() {
             <span className="text-2xl font-bold bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent">
               YGGDRASIL
             </span>
-
           </div>
         </div>
 
@@ -52,29 +53,52 @@ export function Header() {
           >
             Quem Somos
           </Link>
-          <Link href="#funcionamento" className="text-foreground hover:text-primary transition-colors font-medium">
+          <Link
+            href="#funcionamento"
+            className="text-foreground hover:text-primary transition-colors font-medium"
+          >
             Funcionamento
           </Link>
-          <Link href="#equipe" className="text-foreground hover:text-primary transition-colors font-medium">
+          <Link
+            href="#equipe"
+            className="text-foreground hover:text-primary transition-colors font-medium"
+          >
             Equipe
           </Link>
-          <Link href="#apoiadores" className="text-foreground hover:text-primary transition-colors font-medium">
+          <Link
+            href="#apoiadores"
+            className="text-foreground hover:text-primary transition-colors font-medium"
+          >
             Apoiadores
           </Link>
-          <Link href="#aplicativo" className="text-foreground hover:text-primary transition-colors font-medium">
+          <Link
+            href="#aplicativo"
+            className="text-foreground hover:text-primary transition-colors font-medium"
+          >
             Aplicativo
           </Link>
           <ThemeToggle />
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg">
-            <Leaf className="mr-2 h-4 w-4" />
-            Acessar plataforma
-          </Button>
+          <a href="https://painel.yggdrasil.eco.br/">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg">
+              <Leaf className="mr-2 h-4 w-4" />
+              Acessar plataforma
+            </Button>
+          </a>
         </nav>
 
         <div className="flex items-center space-x-4 lg:hidden">
           <ThemeToggle />
-          <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-foreground">
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-foreground"
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </Button>
         </div>
       </div>
@@ -118,13 +142,15 @@ export function Header() {
             >
               Aplicativo
             </Link>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg mt-4">
-              <Leaf className="mr-2 h-4 w-4" />
-              Acessar plataforma
-            </Button>
+            <a href="https://painel.yggdrasil.eco.br/">
+              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg mt-4">
+                <Leaf className="mr-2 h-4 w-4" />
+                Acessar plataforma
+              </Button>
+            </a>
           </nav>
         </div>
       )}
     </header>
-  )
+  );
 }
