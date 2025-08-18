@@ -44,7 +44,7 @@ const faqs = [
 export default function FAQSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-background to-primary/5 dark:from-background dark:to-primary/10">
-      <div className="container px-4 md:px-6">
+      <div className="px-4 md:px-6">
         <div className="text-center space-y-4 mb-16">
           <Badge
             variant="secondary"
@@ -65,7 +65,7 @@ export default function FAQSection() {
                 value={faq.question}
                 className="bg-card rounded-lg shadow-sm border-0"
               >
-                <AccordionTrigger className="px-6 py-4 text-left font-medium hover:no-underline text-foreground">
+                <AccordionTrigger className="px-6 py-4 text-left font-medium hover:no-underline text-foreground cursor-pointer">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-muted-foreground">
