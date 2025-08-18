@@ -1,0 +1,73 @@
+import { Award, Leaf, TreePine, Users } from "lucide-react";
+import { Badge } from "../ui/badge";
+import { Card, CardDescription, CardHeader } from "../ui/card";
+
+export function ImpactSection() {
+  return (
+    <>
+      <section className="py-20 bg-card">
+        <div className="px-4 md:px-6">
+          <div className="text-center space-y-4 mb-16">
+            <Badge
+              variant="secondary"
+              className="bg-primary/10 text-primary border-primary/20"
+            >
+              Nosso Impacto
+            </Badge>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
+              Resultados que Fazem a Diferença
+            </h2>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                number: "10,000+",
+                label: "Árvores Tokenizadas",
+                icon: TreePine,
+                color: "from-green-500 to-emerald-500",
+              },
+              {
+                number: "5,000",
+                label: "Toneladas CO₂ Compensadas",
+                icon: Leaf,
+                color: "from-blue-500 to-indigo-500",
+              },
+              {
+                number: "1,200+",
+                label: "Fiscais Ativos",
+                icon: Users,
+                color: "from-purple-500 to-violet-500",
+              },
+              {
+                number: "150+",
+                label: "Especialistas Certificados",
+                icon: Award,
+                color: "from-amber-500 to-orange-500",
+              },
+            ].map((stat, index) => (
+              <Card
+                key={index}
+                className="border-border shadow-lg text-center bg-card"
+              >
+                <CardHeader>
+                  <div
+                    className={`h-16 w-16 rounded-2xl bg-gradient-to-br ${stat.color} flex items-center justify-center mx-auto mb-4`}
+                  >
+                    <stat.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <div className="text-4xl font-bold text-foreground mb-2">
+                    {stat.number}
+                  </div>
+                  <CardDescription className="text-lg font-medium text-muted-foreground">
+                    {stat.label}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
