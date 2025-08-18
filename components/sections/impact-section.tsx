@@ -51,7 +51,7 @@ export function ImpactSection() {
             ].map((stat, index) => (
               <Card
                 key={index}
-                className="border-border shadow-lg text-center bg-card"
+                className="border-border z-10 shadow-lg text-center bg-card"
               >
                 <CardHeader>
                   <div
