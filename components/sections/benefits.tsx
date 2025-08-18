@@ -32,7 +32,7 @@ export function Benefits(){
             </Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
               <span className="text-foreground">
-                BENEFÍCIOS
+                Benefícios
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-[800px] mx-auto">
