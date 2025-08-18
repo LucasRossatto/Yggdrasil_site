@@ -80,7 +80,7 @@ export function HeroSection() {
                 className=""
               />
             </div>
-            <div className="group filter blur-xs  transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -top-4 -right-4 w-26 h-26 rounded-full opacity-20 group-hover:opacity-100  hover:opacity-100 cursor-pointer flex items-center justify-center *:z-50">
+            <div className="group filter blur-[2px]  transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -top-4 -right-4 w-26 h-26 rounded-full opacity-20 group-hover:opacity-100  hover:opacity-100 cursor-pointer flex items-center justify-center *:z-50">
               <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90"></div>
               <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-110"></div>
 
@@ -95,7 +95,7 @@ export function HeroSection() {
                 YGG
               </div>
             </div>
-            <div className="group filter blur-xs transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -bottom-5 -left-8 w-32 h-32 rounded-full opacity-20 hover:opacity-100 cursor-pointer  flex items-center justify-center *:z-50">
+            <div className="group filter blur-[2px] transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -bottom-5 -left-8 w-32 h-32 rounded-full opacity-20 hover:opacity-100 cursor-pointer  flex items-center justify-center *:z-50">
               <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-105"></div>
               <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-120"></div>
 
@@ -110,7 +110,7 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="group filter blur-xs transition-all cursor-pointer  duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute top-1/2 -left-6 w-18 h-18 rounded-full opacity-20 hover:opacity-100 flex items-center justify-center *:z-50">
+            <div className="group filter blur-[2px]  transition-all cursor-pointer  duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute top-1/2 -left-6 w-18 h-18 rounded-full opacity-20 hover:opacity-100 flex items-center justify-center *:z-50">
               <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-100"></div>
               <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
 
