@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/images/yggdrasil-logo.png" type="image/png" sizes="any"/>
         <style>{`
             html {
               font-family: ${GeistSans.style.fontFamily};
