@@ -42,13 +42,13 @@ export function AboutSection() {
         </svg>
       </div>
 
-      <div className="container px-4 md:px-6 relative z-10 mt-2">
+      <div className=" px-4 md:px-6 relative z-10 mt-2">
         <div className="text-center space-y-4 mb-16">
           <Badge
             variant="secondary"
             className="bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300 border-green-200 dark:border-green-700"
           >
-            <TreePine className="mr-2 h-4 w-4" />
+            <TreePine  className="mr-2 h-4 w-4" />
             Nossa Missão
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">Quem Somos</h2>
