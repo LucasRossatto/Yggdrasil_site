@@ -3,12 +3,13 @@ import { Leaf, User, Camera, GraduationCap, Coins, TrendingUp, Star } from "luci
 import { StepCard } from "../StepCard";
 
 export function HowItWorksSection() {
+  
   const steps = [
   {
     step: "1",
-    title: "Cadastro e Tokenização",
+    title: "Usuário, Tokens e Créditos de Carbono",
     description: 
-      "Qualquer pessoa pode se cadastrar, tokenizar árvores e começar a participar da geração de SCCs (Save Credit Carbon).",
+      "Qualquer pessoa pode tokenizar uma árvore, e a partir disso, o usuário passa a possuir um ativo que gera SCC's ou (Save Credit Carbon), os quais o usuário tem a liberdade de vender.",
     icon: User,
     color: "from-green-500 to-emerald-500",
   },
@@ -52,14 +53,14 @@ export function HowItWorksSection() {
       id="funcionamento"
       className="py-20  bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10 relative"
     >
-      <div className="container px-4 md:px-6">
+      <div className=" px-4 md:px-6">
         <div className="text-center space-y-4 mb-16">
           <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
             <Leaf className="w-4 h-4 mr-2" />
             Processo
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-foreground">
               COMO FUNCIONA
             </span>
           </h2>

@@ -25,7 +25,7 @@ export function Header() {
         isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="container flex h-20 items-center justify-between px-4 md:px-6">
+      <div className=" flex h-20 items-center justify-between px-4 md:px-6">
         <div className="flex items-center space-x-3">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg relative overflow-hidden">
             <Image
