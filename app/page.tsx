@@ -166,7 +166,7 @@ export default function YggdrasilRedesign() {
             </div>
 
             <div className="grid gap-8 lg:grid-cols-2 items-start">
-              <Card className="border-0 shadow-xl">
+              <Card className="border-0 shadow-xl z-10">
                 <CardHeader>
                   <CardTitle className="text-center text-2xl">
                     Formulário de Apoio
@@ -235,7 +235,8 @@ export default function YggdrasilRedesign() {
                   </div>
 
                   <Button
-                    className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90"
+                    variant={"default"}
+                    className="w-full bg-primary"
                     size="lg"
                   >
                     Enviar Mensagem
@@ -297,7 +298,7 @@ export default function YggdrasilRedesign() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-0 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10">
+                <Card className="border-0 z-10 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-3">
                       <Target className="h-6 w-6 text-primary" />

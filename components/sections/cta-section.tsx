@@ -33,7 +33,8 @@ export function CtaSection() {
               um planeta mais verde.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+           <a href="#funcionamento">
+               <Button
                 size="lg"
                 className="bg-white text-green-600 hover:bg-gray-100 text-lg px-8 py-6 shadow-lg"
               >
@@ -41,7 +42,9 @@ export function CtaSection() {
                 Começar Agora
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button
+           </a>
+             <a href="#aplicativo">
+               <Button
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-green-600 text-lg px-8 py-6 bg-transparent"
@@ -49,6 +52,7 @@ export function CtaSection() {
                 <Download className="mr-2 h-5 w-5" />
                 Baixar Aplicativo
               </Button>
+             </a>
             </div>
           </div>
         </div>

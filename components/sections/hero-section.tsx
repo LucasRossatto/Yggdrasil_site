@@ -41,7 +41,8 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button
+             <a href="#funcionamento">
+               <Button
                 size="lg"
                 className="bg-primary cursor-pointer hover:from-primary/90 hover:to-accent/90 text-primary-foreground shadow-lg text-lg px-8 py-6"
               >
@@ -49,6 +50,7 @@ export function HeroSection() {
                 Comece Agora
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+             </a>
              <HeroVideoButton/>
             </div>
 
