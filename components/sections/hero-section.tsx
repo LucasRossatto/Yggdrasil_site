@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { TreePine, Leaf, ArrowRight, Play, CheckCircle } from "lucide-react";
+import HeroVideoButton from "../PopUpYoutube";
 
 export function HeroSection() {
   return (
@@ -48,14 +49,7 @@ export function HeroSection() {
                 Comece Agora
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary cursor-pointer text-primary hover:bg-primary/10 text-lg px-8 py-6 bg-transparent"
-              >
-                <Play className="mr-2 h-5 w-5" />
-                Conheça o Projeto
-              </Button>
+             <HeroVideoButton/>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start space-x-8 text-sm text-muted-foreground">
