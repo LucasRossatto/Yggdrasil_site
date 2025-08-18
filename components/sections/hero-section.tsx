@@ -91,7 +91,7 @@ export function HeroSection() {
                 className="object-contain"
               />
 
-              <div className="absolute bottom-full mb-2 px-2 py-1 bg-black bg-opacity-70  text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity hover:opacity-100 duration-300 pointer-events-none">
+              <div className="absolute -left-7 bottom-22 mb-2 px-2 py-1 bg-black bg-opacity-70  text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity hover:opacity-100 duration-300 pointer-events-none">
                 YGG
               </div>
             </div>
@@ -110,7 +110,7 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="group filter blur-[2px]  transition-all cursor-pointer  duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute top-1/2 -left-6 w-18 h-18 rounded-full opacity-20 hover:opacity-100 flex items-center justify-center *:z-50">
+            <div className="group filter blur-[2px]  transition-all cursor-pointer  duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute top-1/2 -left-12 w-18 h-18 rounded-full opacity-20 hover:opacity-100 flex items-center justify-center *:z-50">
               <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-100"></div>
               <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
 
@@ -120,7 +120,7 @@ export function HeroSection() {
                 fill
                 className="object-contain"
               />
-              <div className="absolute bottom-full mb-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+              <div className="absolute -left-8 bottom-16 mb-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                 SCC
               </div>
             </div>
