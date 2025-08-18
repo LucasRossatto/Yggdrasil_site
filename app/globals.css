@@ -137,6 +137,8 @@
   /* Enhanced transitions for theme switching */
   html {
     transition: color-scheme 0.4s ease;
+    scroll-behavior: smooth;
+
   }
 
   /* Improved scrollbar for better dark theme visibility */
