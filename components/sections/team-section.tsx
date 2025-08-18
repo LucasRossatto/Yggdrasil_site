@@ -40,7 +40,7 @@ export function TeamSection() {
                 name: "Rodrigo Almeida",
                 role: "CEO & Fundador",
                 description:
-                  "Visionário por trás do YggDrasil, com experiência em sustentabilidade e blockchain.",
+                  "Empreendedor apaixonado por construir soluções que têm como propósito o desenvolvimento da sociedade e a preservação do nosso planeta.",
                 linkedin: "#",
                 profile_image: "/RODRIGO-ALMEIDA.jfif",
               },
@@ -48,7 +48,7 @@ export function TeamSection() {
                 name: "Marlom Romero",
                 role: "Dev & Técnico",
                 description:
-                  "Especialista em sistemas RFID e tecnologias de identificação para monitoramento.",
+                  "Desenvolvedor especializado em sistemas com RFID e com um profundo apreço por otimizar processos usando tecnologias inovadoras.",
                 linkedin: "#",
                 profile_image: "/MARLOM-ROMERO.png",
               },
@@ -56,7 +56,7 @@ export function TeamSection() {
                 name: "Dalton Miyazato",
                 role: "Dev & Técnico",
                 description:
-                  "Focado na integração de tecnologias de ponta com máxima eficiência.",
+                  "Desenvolvedor especializado em integrar tecnologia de ponta com eficiência, criando impacto positivo e transformando desafios em oportunidades.",
                 linkedin: "#",
                 profile_image: "/DALTON-MIYAZATO.jpeg",
               },
@@ -64,7 +64,7 @@ export function TeamSection() {
                 name: "Felipe Freisinger",
                 role: "Engenheiro Ambiental",
                 description:
-                  "Especialista em sustentabilidade e impacto ambiental do projeto.",
+                  "Engenheiro Ambiental apaixonado por criar soluções sustentáveis para impulsionar a sociedade e preservar o planeta.",
                 linkedin: "#",
                 profile_image: "/FELIPE-FREISINGER.png",
               },
@@ -72,7 +72,7 @@ export function TeamSection() {
                 name: "Rogério Dragone",
                 role: "Comunicação",
                 description:
-                  "Responsável por conectar o YggDrasil com a comunidade global.",
+                  "Profissional da Comunicação dedicado a construir narrativas impactantes que inspirem e conectem, alem de comunicar ideias de maneira envolvente, promovendo diálogos significativos na sociedade.",
                 linkedin: "#",
                 profile_image: "/ROGERIO-DRAGONE.png",
               },
@@ -95,8 +95,8 @@ export function TeamSection() {
                       <CheckCircle className="h-4 w-4 text-white" />
                     </div>
                   </div>
-                  <CardTitle className="text-lg">{member.name}</CardTitle>
-                  <CardDescription className="text-green-600 font-medium text-sm">
+                  <CardTitle className="text-sm underline">{member.name}</CardTitle>
+                  <CardDescription className="text-green-600 font-medium text-xl">
                     {member.role}
                   </CardDescription>
                   <p className="text-sm text-gray-600 mt-2 leading-relaxed">
