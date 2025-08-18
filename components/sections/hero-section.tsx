@@ -75,7 +75,7 @@ export function HeroSection() {
           </div>
 
           <div className="relative">
-            <div className="relative z-10">
+            <div className="relative">
               <Image
                 src="https://yggdrasil.eco.br/CSS/ASSETS/LOGO-FUNDO-BRANCO.png"
                 alt="YggDrasil Digital Forest"
@@ -84,14 +84,49 @@ export function HeroSection() {
                 className=""
               />
             </div>
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full opacity-20 animate-pulse flex items-center justify-center">
-              <Leaf className="w-8 h-8 text-primary-foreground" />
+            <div className="group filter blur-xs  transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -top-4 -right-4 w-26 h-26 rounded-full opacity-20 group-hover:opacity-100  hover:opacity-100 cursor-pointer flex items-center justify-center *:z-50">
+              <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90"></div>
+              <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-110"></div>
+
+              <Image
+                src="/images/hero/YggCoin_transparente.png"
+                alt="Leaf"
+                fill
+                className="object-contain"
+              />
+
+              <div className="absolute bottom-full mb-2 px-2 py-1 bg-black bg-opacity-70  text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity hover:opacity-100 duration-300 pointer-events-none">
+                YGG
+              </div>
             </div>
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-accent to-primary rounded-full opacity-10 animate-pulse delay-1000 flex items-center justify-center">
-              <TreePine className="w-12 h-12 text-primary-foreground" />
+            <div className="group filter blur-xs transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -bottom-5 -left-8 w-32 h-32 rounded-full opacity-20 hover:opacity-100 cursor-pointer  flex items-center justify-center *:z-50">
+              <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-105"></div>
+              <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-120"></div>
+
+              <Image
+                src="/images/hero/tag_transparente.png"
+                alt="Tree"
+                fill
+                className="object-contain"
+              />
+              <div className="absolute left-30 bottom-28 mb-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                YGGTAG
+              </div>
             </div>
-            <div className="absolute top-1/2 -left-6 w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-full opacity-15 animate-pulse delay-500 flex items-center justify-center">
-              <Leaf className="w-6 h-6 text-primary-foreground" />
+
+            <div className="group filter blur-xs transition-all cursor-pointer  duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute top-1/2 -left-6 w-18 h-18 rounded-full opacity-20 hover:opacity-100 flex items-center justify-center *:z-50">
+              <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-100"></div>
+              <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+
+              <Image
+                src="/images/hero/SCC_transparente.png"
+                alt="Leaf small"
+                fill
+                className="object-contain"
+              />
+              <div className="absolute bottom-full mb-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                SCC
+              </div>
             </div>
           </div>
         </div>
