@@ -2,7 +2,7 @@ import { Header } from "@/components/sections/header";
 import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { Footer } from "@/components/sections/footer";
-import { Leaf } from "lucide-react";
+import { HandHeart, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -100,7 +100,7 @@ export default function YggdrasilRedesign() {
 
       <AboutSection />
 
-       {/* Branch divider */}
+      {/* Branch divider */}
       <div className="relative top-0 left-0 w-full h-16 opacity-10">
         <svg
           viewBox="0 0 1200 60"
@@ -125,25 +125,25 @@ export default function YggdrasilRedesign() {
       </div>
 
       {/* Como Funciona Section */}
-      <HowItWorksSection/>
+      <HowItWorksSection />
 
       {/* Benefícios Section */}
-      <Benefits/>
+      <Benefits />
 
       {/* Nosso Aplicativo Section */}
-      <AppSection/>
+      <AppSection />
 
       {/* Equipe Section */}
-      <TeamSection/>
+      <TeamSection />
 
       {/* Apoiadores */}
-      <SupportersSection/>
+      <SupportersSection />
 
       {/* Impacto/Estatísticas Section */}
-      <ImpactSection/>
+      <ImpactSection />
 
       {/* FAQ Section */}
-      <FAQSection/>
+      <FAQSection />
 
       {/* Apoie o Projeto Section */}
       <section id="apoieOProjeto" className="py-20 bg-card">
@@ -260,6 +260,7 @@ export default function YggdrasilRedesign() {
                         <p className="font-medium text-foreground">
                           Investimento
                         </p>
+
                         <p className="text-sm text-muted-foreground">
                           Contribua financeiramente para o desenvolvimento da
                           plataforma
@@ -295,9 +296,14 @@ export default function YggdrasilRedesign() {
                         </p>
                       </div>
                     </div>
+                    <a className="border-primary cursor-pointer hover:bg-accent-foreground font-bold  bg-foreground text-primary px-4 py-2 rounded-sm text-2xl  flex flex-row items-center justify-center gap-2">
+                      <HandHeart className="h-5 w-5" />
+                      <span className="text-xs">
+                        Apoiar a Revolução verde
+                      </span>
+                    </a>
                   </CardContent>
                 </Card>
-
                 <Card className="border-0 z-10 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-3">
@@ -320,7 +326,7 @@ export default function YggdrasilRedesign() {
       </section>
 
       {/* Final CTA Section */}
-      <CtaSection/>
+      <CtaSection />
 
       <Footer />
     </div>
