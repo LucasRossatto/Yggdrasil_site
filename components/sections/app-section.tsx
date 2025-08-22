@@ -1,4 +1,13 @@
-import { BarChart3, Bell, Camera, Coins, Download, MapPin, QrCode, Smartphone, Zap } from "lucide-react";
+import {
+  BarChart3,
+  Bell,
+  Camera,
+  Coins,
+  MapPin,
+  QrCode,
+  Smartphone,
+  Zap,
+} from "lucide-react";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
 import { Button } from "../ui/button";
@@ -6,7 +15,6 @@ import { Button } from "../ui/button";
 export function AppSection() {
   return (
     <>
-      {/* Nosso Aplicativo Section */}
       <section
         id="aplicativo"
         className="py-12 md:py-20 bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10 flex justify-center items-center overflow-hidden"
@@ -144,16 +152,16 @@ export function AppSection() {
                     size="lg"
                     className="bg-primary sm: py-4 hover:from-primary/90 hover:to-secondary/90 text-primary-foreground shadow-lg flex-1"
                   >
-                    <Download className="mr-2 h-5 w-5" />
-                    Download iOS
+                    <i className="bi bi-android2 mr-2 h-5 w-5"></i>
+                    Download Android
                   </Button>
                   <Button
                     size="lg"
                     variant="default"
-                    className="border-primary hover:bg-foreground sm: py-4  text-primary flex-1 bg-foreground"
+                    className="border-primary hover:bg-foreground/80 sm: py-4  text-primary flex-1 bg-foreground"
                   >
-                    <Download className="mr-2 h-5 w-5" />
-                    Download Android
+                    <i className="mr-2 h-5 w-5 bi bi-apple"></i>
+                    Download iOS
                   </Button>
                 </div>
 
