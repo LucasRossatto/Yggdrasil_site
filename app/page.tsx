@@ -3,46 +3,6 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { Footer } from "@/components/sections/footer";
 import { Leaf } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-
-import {
-  TreePine,
-  Coins,
-  Camera,
-  GraduationCap,
-  Globe,
-  ArrowRight,
-  Mail,
-  Phone,
-  User,
-  MessageSquare,
-  CheckCircle,
-  Award,
-  Linkedin,
-  Shield,
-  TrendingUp,
-  Users,
-  BarChart3,
-  Heart,
-  Target,
-  Smartphone,
-  Download,
-  QrCode,
-  MapPin,
-  Bell,
-  Zap,
-} from "lucide-react";
-import Image from "next/image";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import FAQSection from "@/components/sections/FAQ";
 import { Benefits } from "@/components/sections/benefits";
@@ -51,6 +11,7 @@ import { TeamSection } from "@/components/sections/team-section";
 import { ImpactSection } from "@/components/sections/impact-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { SupportersSection } from "@/components/sections/supporters-section";
+import SuportProjetSection from "@/components/sections/suport-project-section";
 
 export default function YggdrasilRedesign() {
   return (
@@ -100,7 +61,7 @@ export default function YggdrasilRedesign() {
 
       <AboutSection />
 
-       {/* Branch divider */}
+      {/* Branch divider */}
       <div className="relative top-0 left-0 w-full h-16 opacity-10">
         <svg
           viewBox="0 0 1200 60"
@@ -125,202 +86,31 @@ export default function YggdrasilRedesign() {
       </div>
 
       {/* Como Funciona Section */}
-      <HowItWorksSection/>
+      <HowItWorksSection />
 
       {/* Benefícios Section */}
-      <Benefits/>
+      <Benefits />
 
       {/* Nosso Aplicativo Section */}
-      <AppSection/>
+      <AppSection />
 
       {/* Equipe Section */}
-      <TeamSection/>
+      <TeamSection />
 
       {/* Apoiadores */}
-      <SupportersSection/>
+      <SupportersSection />
 
       {/* Impacto/Estatísticas Section */}
-      <ImpactSection/>
+      <ImpactSection />
 
       {/* FAQ Section */}
-      <FAQSection/>
+      <FAQSection />
 
       {/* Apoie o Projeto Section */}
-      <section id="apoieOProjeto" className="py-20 bg-card">
-        <div className="px-4 md:px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center space-y-4 mb-12">
-              <Badge
-                variant="secondary"
-                className="bg-primary/10 text-primary border-primary/20"
-              >
-                Apoie o Projeto
-              </Badge>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
-                Junte-se à Revolução Verde
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Quer fazer parte da mudança? Entre em contato conosco e descubra
-                como pode contribuir para um futuro mais sustentável.
-              </p>
-            </div>
-
-            <div className="grid gap-8 lg:grid-cols-2 items-start">
-              <Card className="border-0 shadow-xl z-10">
-                <CardHeader>
-                  <CardTitle className="text-center text-2xl">
-                    Formulário de Apoio
-                  </CardTitle>
-                  <CardDescription className="text-center">
-                    Preencha os dados abaixo e nossa equipe entrará em contato
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div className="space-y-2">
-                      <label htmlFor="nome" className="text-sm font-medium">
-                        Nome Completo
-                      </label>
-                      <div className="relative">
-                        <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                        <Input
-                          id="nome"
-                          placeholder="Seu nome completo"
-                          className="pl-10"
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="telefone" className="text-sm font-medium">
-                        Telefone
-                      </label>
-                      <div className="relative">
-                        <Phone className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                        <Input
-                          id="telefone"
-                          placeholder="(11) 99999-9999"
-                          className="pl-10"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      E-mail
-                    </label>
-                    <div className="relative">
-                      <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="seu@email.com"
-                        className="pl-10"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="mensagem" className="text-sm font-medium">
-                      Mensagem
-                    </label>
-                    <div className="relative">
-                      <MessageSquare className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                      <Textarea
-                        id="mensagem"
-                        placeholder="Como você gostaria de apoiar o YggDrasil?"
-                        className="pl-10 min-h-[120px]"
-                      />
-                    </div>
-                  </div>
-
-                  <Button
-                    variant={"default"}
-                    className="w-full bg-primary"
-                    size="lg"
-                  >
-                    Enviar Mensagem
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <div className="space-y-6">
-                <Card className="border-0 shadow-lg">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-3">
-                      <Heart className="h-6 w-6 text-red-500" />
-                      Formas de Apoiar
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                      <div>
-                        <p className="font-medium text-foreground">
-                          Investimento
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          Contribua financeiramente para o desenvolvimento da
-                          plataforma
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                      <div>
-                        <p className="font-medium text-foreground">Parcerias</p>
-                        <p className="text-sm text-muted-foreground">
-                          Estabeleça parcerias estratégicas com sua organização
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                      <div>
-                        <p className="font-medium text-foreground">
-                          Divulgação
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          Ajude a espalhar nossa missão em suas redes
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                      <div>
-                        <p className="font-medium text-foreground">Expertise</p>
-                        <p className="text-sm text-muted-foreground">
-                          Compartilhe conhecimento técnico ou ambiental
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 z-10 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-3">
-                      <Target className="h-6 w-6 text-primary" />
-                      Nossa Meta
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Queremos tokenizar 1 milhão de árvores até 2025, criando
-                      um ecossistema sustentável que recompense a conservação
-                      ambiental e gere impacto positivo real no planeta.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SuportProjetSection/>
 
       {/* Final CTA Section */}
-      <CtaSection/>
+      <CtaSection />
 
       <Footer />
     </div>

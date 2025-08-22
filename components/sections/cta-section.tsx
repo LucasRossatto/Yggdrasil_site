@@ -1,4 +1,4 @@
-import { ArrowRight, Download, TreePine } from "lucide-react";
+import { ArrowRight, Download, Leaf, TreePine } from "lucide-react";
 import { Button } from "../ui/button";
 
 export function CtaSection() {
@@ -6,7 +6,7 @@ export function CtaSection() {
     <>
       <section className="py-20 bg-gradient-to-br from-green-600 to-emerald-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute bottom-0 left-0 w-full h-32">
+          <div className="absolute bottom-2 left-0 rotate-0 w-full h-32">
             <svg
               viewBox="0 0 1200 100"
               className="w-full h-full fill-current text-primary-foreground"
@@ -15,7 +15,7 @@ export function CtaSection() {
             </svg>
           </div>
           <div className="absolute top-10 right-10 w-20 h-40">
-            <TreePine className="w-full h-full text-primary-foreground" />
+            <Leaf className="w-full h-full text-primary-foreground" />
           </div>
           <div className="absolute top-20 left-10 w-16 h-32">
             <TreePine className="w-full h-full text-primary-foreground" />
@@ -25,7 +25,7 @@ export function CtaSection() {
         <div className="px-4 md:px-6 text-center space-y-8 relative z-10">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              Pronto para Fazer a Diferença?
+              Pronto para fazer a diferença?
             </h2>
             <p className="text-xl opacity-90">
               Junte-se ao YggDrasil e seja parte da solução para a conservação
@@ -33,7 +33,7 @@ export function CtaSection() {
               um planeta mais verde.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-           <a href="#funcionamento">
+           <a href="https://painel.yggdrasil.eco.br/Login/Cadastro">
                <Button
                 size="lg"
                 className="bg-white text-green-600 hover:bg-gray-100 text-lg px-8 py-6 shadow-lg"
