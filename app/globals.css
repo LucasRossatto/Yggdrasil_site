@@ -138,8 +138,12 @@
   html {
     transition: color-scheme 0.4s ease;
     scroll-behavior: smooth;
-
+    font-family: var(--font-sans); /* Poppins como padrão */
   }
+
+  h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mono); /* Montserrat para títulos */
+}
 
   /* Improved scrollbar for better dark theme visibility */
   ::-webkit-scrollbar {

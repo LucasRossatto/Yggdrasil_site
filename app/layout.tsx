@@ -1,9 +1,20 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Poppins, Montserrat } from "next/font/google"
 import "./globals.css"
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], 
+  variable: "--font-sans"
+})
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-mono"
+})
 
 export const metadata: Metadata = {
   title: "YggDrasil - Monitorando a Vida",
@@ -17,16 +28,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang="pt-BR" className={`${poppins.variable} ${montserrat.variable}`} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/images/yggdrasil-logo.png" type="image/png" sizes="any"/>
-        <style>{`
-            html {
-              font-family: ${GeistSans.style.fontFamily};
-              --font-sans: ${GeistSans.variable};
-              --font-mono: ${GeistMono.variable};
-            }
-        `}</style>
       </head>
       <body>
       <ThemeProvider attribute="class" defaultTheme="dark"  disableTransitionOnChange={false}>
