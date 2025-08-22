@@ -13,6 +13,7 @@ export function HeroSection() {
           alt="Dossel de árvores com rio"
           fill
           className="object-cover opacity-30"
+          blurDataURL="/images/perspectiva-de-um-belo-dossel-de-arvores-com-um-rio.jpg"
           loading="eager"
         />
       </div>
@@ -78,7 +79,7 @@ export function HeroSection() {
                 alt="YggDrasil Digital Forest"
                 width={800}
                 height={600}
-                className=""
+                blurDataURL="/images/LOGO-YGGDRASIL.png"
                 loading="eager"
               />
             </div>
