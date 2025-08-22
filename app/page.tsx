@@ -2,47 +2,7 @@ import { Header } from "@/components/sections/header";
 import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { Footer } from "@/components/sections/footer";
-import { HandHeart, Leaf } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-
-import {
-  TreePine,
-  Coins,
-  Camera,
-  GraduationCap,
-  Globe,
-  ArrowRight,
-  Mail,
-  Phone,
-  User,
-  MessageSquare,
-  CheckCircle,
-  Award,
-  Linkedin,
-  Shield,
-  TrendingUp,
-  Users,
-  BarChart3,
-  Heart,
-  Target,
-  Smartphone,
-  Download,
-  QrCode,
-  MapPin,
-  Bell,
-  Zap,
-} from "lucide-react";
-import Image from "next/image";
+import { Leaf } from "lucide-react";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import FAQSection from "@/components/sections/FAQ";
 import { Benefits } from "@/components/sections/benefits";
