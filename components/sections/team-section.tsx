@@ -23,10 +23,10 @@ export function TeamSection() {
               variant="secondary"
               className="bg-primary/10 text-primary border-primary/20"
             >
-              Nossa Equipe
+              Especialistas Dedicados à Inovação
             </Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
-              Especialistas Dedicados à Inovação
+              Nossa Equipe
             </h2>
             <p className="text-xl text-muted-foreground max-w-[800px] mx-auto">
               Conheça os profissionais por trás do YggDrasil, unidos pela paixão
