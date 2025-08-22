@@ -1,6 +1,6 @@
 "use client"
 
-import { Award, Leaf, TreePine, Users } from "lucide-react";
+import { Leaf, TreePine, Users, Vault } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { Card, CardDescription, CardHeader } from "../ui/card";
 import CountUp from "../reactBits/CountUp";
@@ -32,7 +32,7 @@ export function ImpactSection() {
               },
               {
                 number: 5000,
-                label: "Toneladas CO₂ Compensadas",
+                label: "Kg de CO₂ Compensadas",
                 icon: Leaf,
                 color: "from-blue-500 to-indigo-500",
               },
@@ -44,8 +44,8 @@ export function ImpactSection() {
               },
               {
                 number: 150,
-                label: "Especialistas Certificados",
-                icon: Award,
+                label: "Cofre valhalla",
+                icon: Vault,
                 color: "from-amber-500 to-orange-500",
               },
             ].map((stat, index) => (
