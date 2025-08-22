@@ -5,16 +5,16 @@ import { Badge } from "../ui/badge";
 export function SupportersSection() {
   const supporters = [
     {
-      name: "Ilumini",
-      image_path: "/images/supporters/ILUMINI-LOGO.jpg",
+      name: "Advantag",
+      image_path: "/images/supporters/ADVANTAG-LOGO.png",
     },
     {
       name: "Visionare",
-      image_path: "/images/supporters/VISIONARE-LOGO.png",
+      image_path: "/images/supporters/VISIONAIR-LOGO.png",
     },
     {
-      name: "Advantag",
-      image_path: "/images/supporters/ADVANTAG-LOGO.png",
+      name: "Ilumini",
+      image_path: "/images/supporters/ILUMINI-LOGO.jpg",
     },
   ];
 
@@ -32,19 +32,23 @@ export function SupportersSection() {
             Apoiadores
           </h2>
           <p className="text-xl text-muted-foreground max-w-[800px] mx-auto">
-              Conheça as empresas e parceiros que apoiam o YggDrasil, unidos pelo compromisso de promover inovação e sustentabilidade ambiental.
+            Conheça as empresas e parceiros que apoiam o YggDrasil, unidos pelo
+            compromisso de promover inovação e sustentabilidade ambiental.
           </p>
         </div>
         <Card className="border-0">
-          <CardContent className="flex flex-wrap justify-center gap-6">
+          <CardContent className="flex flex-wrap justify-center gap-8">
             {supporters.map((supporter, index) => (
-              <div key={index} className="flex flex-col items-center gap-2">
+              <div
+                key={index}
+                className="flex flex-col items-center"
+              >
                 <Image
                   src={supporter.image_path}
                   alt={supporter.name}
-                  width={120}
-                  height={60}
-                  className="object-contain"
+                  width={300}
+                  height={300}
+                  className="object-contain h-full mx-4"
                 />
               </div>
             ))}
