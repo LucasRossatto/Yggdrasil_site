@@ -17,7 +17,7 @@ export function TeamSection() {
         id="equipe"
         className="py-20 flex justify-center items-center bg-gradient-to-br from-background to-primary/5 dark:from-background to-primary/10"
       >
-        <div className="container px-4 md:px-6">
+        <div className="px-4 md:px-6 container md:max-w-full">
           <div className="text-center space-y-4 mb-16">
             <Badge
               variant="secondary"
@@ -34,7 +34,7 @@ export function TeamSection() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 max-w-7xl mx-auto">
+          <div className="grid gap-8 lg:gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5  mx-auto">
             {[
               {
                 name: "Rodrigo Almeida",
@@ -79,14 +79,13 @@ export function TeamSection() {
             ].map((member, index) => (
               <Card
                 key={index}
-                className="border-0 z-10 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
+                className=" border-0 z-10 md:w-64  shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
               >
                 <CardHeader className="pb-4">
                   <div className="relative mx-auto mb-4">
                     <Image
                       src={`/images/team_members${member.profile_image}`}
                       alt={member.name}
-
                       width={130}
                       height={130}
                       className="rounded-full mx-auto border-4 border-accent-foreground shadow-lg"
@@ -95,7 +94,9 @@ export function TeamSection() {
                       <CheckCircle className="h-4 w-4 text-white" />
                     </div>
                   </div>
-                  <CardTitle className="text-sm underline">{member.name}</CardTitle>
+                  <CardTitle className="text-sm underline">
+                    {member.name}
+                  </CardTitle>
                   <CardDescription className="text-green-600 font-medium text-xl">
                     {member.role}
                   </CardDescription>
