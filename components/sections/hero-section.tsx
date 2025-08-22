@@ -13,6 +13,7 @@ export function HeroSection() {
           alt="Dossel de árvores com rio"
           fill
           className="object-cover opacity-30"
+          loading="eager"
         />
       </div>
 
@@ -73,11 +74,12 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative">
               <Image
-                src="https://yggdrasil.eco.br/CSS/ASSETS/LOGO-FUNDO-BRANCO.png"
+                src="/images/LOGO-YGGDRASIL.png"
                 alt="YggDrasil Digital Forest"
                 width={800}
                 height={600}
                 className=""
+                loading="eager"
               />
             </div>
             <div className="group filter blur-[2px]  transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -top-4 -right-4 w-26 h-26 rounded-full opacity-20 group-hover:opacity-100  hover:opacity-100 cursor-pointer flex items-center justify-center *:z-50">
