@@ -48,7 +48,7 @@ export function SupportersSection() {
                   alt={supporter.name}
                   width={300}
                   height={300}
-                  className="object-contain h-full mx-4"
+                  className="object-contain h-full mx-4 max-w-0"
                 />
               </div>
             ))}
