@@ -32,7 +32,7 @@ export function HeroSection() {
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                 <span className="block text-foreground">YGGDRASIL</span>
                 <span className="block bg-primary bg-clip-text text-transparent">
-                  Monitorando a vida
+                 Floresta 4.0
                 </span>
               </h1>
               <blockquote className="text-lg md:text-xl text-muted-foreground italic border-l-4 border-primary pl-6 my-8">
@@ -60,15 +60,15 @@ export function HeroSection() {
             <div className="flex items-center justify-center lg:justify-start space-x-8 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-4 w-4 text-primary" />
-                <span>Créditos de Carbono</span>
+                <span className="text-foreground">Créditos de Carbono</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-4 w-4 text-primary" />
-                <span>NFTs de Árvores</span>
+                <span className="text-foreground">NFTs de Árvores</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-4 w-4 text-primary" />
-                <span>Recompensas Crypto</span>
+                <span className="text-foreground">Recompensas Crypto</span>
               </div>
             </div>
           </div>
@@ -84,9 +84,9 @@ export function HeroSection() {
                 loading="eager"
               />
             </div>
-            <div className="group filter blur-[2px]  transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -top-4 -right-4 w-26 h-26 rounded-full opacity-20 group-hover:opacity-100  hover:opacity-100 cursor-pointer flex items-center justify-center *:z-50">
-              <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-90"></div>
-              <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-110"></div>
+            <div className="group filter blur-[2px]  transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -top-3 -right-3 w-26 h-26 rounded-full opacity-20 group-hover:opacity-100  hover:opacity-100 cursor-pointer flex items-center justify-center *:z-50">
+              <div className="absolute inset-0 border-1 border-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+              <div className="absolute inset-0 border-1 border-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-150"></div>
 
               <Image
                 src="/images/hero/YggCoin_transparente.png"
@@ -96,7 +96,7 @@ export function HeroSection() {
               />
 
               <div className="absolute -left-7 bottom-22 mb-2 px-2 py-1 bg-black bg-opacity-70  text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity hover:opacity-100 duration-300 pointer-events-none">
-                YGG
+                YGC
               </div>
             </div>
             <div className="group filter blur-[2px] transition-all duration-300 hover:blur-none hover:scale-110 hover:brightness-125 absolute -bottom-5 -left-8 w-32 h-32 rounded-full opacity-20 hover:opacity-100 cursor-pointer  flex items-center justify-center *:z-50">

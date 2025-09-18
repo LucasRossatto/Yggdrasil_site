@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "YggDrasil - Monitorando a Vida",
+  title: "Yggdrasil - Monitorando a Vida",
   description:
     "Revolucionando a conservação de árvores através da tecnologia blockchain",
   generator: "v0.app",
