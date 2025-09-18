@@ -63,7 +63,7 @@ export default function SuportProjetSection() {
     }
     setIsSubmitting(true);
     try {
-      sendEmail({ ...data, token: recaptchaToken });
+      await sendEmail({ ...data, token: recaptchaToken });
       reset();
       setRecaptchaToken(null);
       toast.success(
@@ -155,16 +155,15 @@ export default function SuportProjetSection() {
         </label>
         <div className="relative">
           <Pin className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-          <Textarea
+          <Input
             id="subject"
             {...register("subject")}
             placeholder="Digite o assunto"
-            rows={5}
             className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6] resize-none"
           />
         </div>
-        {errors.message && (
-          <p className="text-sm text-destructive mt-1">{errors.message.message}</p>
+        {errors.subject && (
+          <p className="text-sm text-destructive mt-1">{errors.subject.message}</p>
         )}
       </div>
 
