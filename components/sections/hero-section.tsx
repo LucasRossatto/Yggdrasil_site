@@ -46,6 +46,7 @@ export function HeroSection() {
              <a href="#funcionamento">
                <Button
                 size="lg"
+                variant="default"
                 className="bg-primary cursor-pointer hover:from-primary/90 hover:to-accent/90 text-primary-foreground shadow-lg text-lg px-8 py-6"
               >
                 <TreePine className="mr-2 h-5 w-5" />
