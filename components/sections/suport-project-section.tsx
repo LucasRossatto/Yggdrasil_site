@@ -1,6 +1,16 @@
-"use client"
+"use client";
 
-import { Pin, ArrowRight, CheckCircle, HandHeart, Heart, Mail, MessageSquare, Phone, Target, User } from "lucide-react";
+import {
+  Pin,
+  CheckCircle,
+  HandHeart,
+  Heart,
+  Mail,
+  MessageSquare,
+  Target,
+  User,
+  Send,
+} from "lucide-react";
 import { Badge } from "../ui/badge";
 import {
   Card,
@@ -15,20 +25,10 @@ import { Button } from "../ui/button";
 import { useState } from "react";
 import { toast } from "sonner";
 import z from "zod";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import ReCAPTCHA from "react-google-recaptcha"
+import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendEmail } from "@/utils/send-email";
-
 
 const contactSchema = z.object({
   name: z.string().min(1, "Nome é obrigatório"),
@@ -40,10 +40,8 @@ const contactSchema = z.object({
 
 export type FormData = z.infer<typeof contactSchema>;
 
-
 export default function SuportProjetSection() {
-
-   const {
+  const {
     register,
     handleSubmit,
     reset,
@@ -63,7 +61,7 @@ export default function SuportProjetSection() {
     }
     setIsSubmitting(true);
     try {
-      await sendEmail({ ...data, token: recaptchaToken });
+      sendEmail({ ...data, token: recaptchaToken });
       reset();
       setRecaptchaToken(null);
       toast.success(
@@ -99,122 +97,131 @@ export default function SuportProjetSection() {
           </div>
 
           <div className="grid gap-8 lg:grid-cols-2 items-start">
-           <Card className="border-0 shadow-xl z-10">
-  <CardHeader>
-    <CardTitle className="text-center text-2xl">
-      Formulário de Apoio
-    </CardTitle>
-    <CardDescription className="text-center">
-      Preencha os dados abaixo e nossa equipe entrará em contato
-    </CardDescription>
-  </CardHeader>
-  <CardContent className="space-y-6">
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-      <div className="grid gap-4">
-        <div className="space-y-2">
-          <label htmlFor="name" className="text-sm font-medium">
-            Nome Completo
-          </label>
-          <div className="relative">
-            <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-            <Input
-              id="name"
-              {...register("name")}
-              placeholder="Seu nome completo"
-              className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6]"
-            />
-          </div>
-          {errors.name && (
-            <p className="text-sm text-destructive mt-1">{errors.name.message}</p>
-          )}
-        </div>
-      </div>
+            <Card className="border-0 shadow-xl z-10">
+              <CardHeader>
+                <CardTitle className="text-center text-2xl">
+                  Formulário de Apoio
+                </CardTitle>
+                <CardDescription className="text-center">
+                  Preencha os dados abaixo e nossa equipe entrará em contato
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                  <div className="grid gap-4">
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-medium">
+                        Nome Completo
+                      </label>
+                      <div className="relative">
+                        <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                        <Input
+                          id="name"
+                          {...register("name")}
+                          placeholder="Seu nome completo"
+                          className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6]"
+                        />
+                      </div>
+                      {errors.name && (
+                        <p className="text-sm text-destructive mt-1">
+                          {errors.name.message}
+                        </p>
+                      )}
+                    </div>
+                  </div>
 
-      <div className="space-y-2">
-        <label htmlFor="email" className="text-sm font-medium">
-          E-mail
-        </label>
-        <div className="relative">
-          <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-          <Input
-            id="email"
-            type="email"
-            {...register("email")}
-            placeholder="seu@email.com"
-            className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6]"
-          />
-        </div>
-        {errors.email && (
-          <p className="text-sm text-destructive mt-1">{errors.email.message}</p>
-        )}
-      </div>
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-sm font-medium">
+                      E-mail
+                    </label>
+                    <div className="relative">
+                      <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                      <Input
+                        id="email"
+                        type="email"
+                        {...register("email")}
+                        placeholder="seu@email.com"
+                        className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6]"
+                      />
+                    </div>
+                    {errors.email && (
+                      <p className="text-sm text-destructive mt-1">
+                        {errors.email.message}
+                      </p>
+                    )}
+                  </div>
 
-     <div className="space-y-2">
-        <label htmlFor="message" className="text-sm font-medium">
-          Assunto
-        </label>
-        <div className="relative">
-          <Pin className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-          <Input
-            id="subject"
-            {...register("subject")}
-            placeholder="Digite o assunto"
-            className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6] resize-none"
-          />
-        </div>
-        {errors.subject && (
-          <p className="text-sm text-destructive mt-1">{errors.subject.message}</p>
-        )}
-      </div>
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-sm font-medium">
+                      Assunto
+                    </label>
+                    <div className="relative">
+                      <Pin className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                      <Input
+                        id="subject"
+                        {...register("subject")}
+                        placeholder="Digite o assunto"
+                        className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6] resize-none"
+                      />
+                    </div>
+                    {errors.subject && (
+                      <p className="text-sm text-destructive mt-1">
+                        {errors.subject.message}
+                      </p>
+                    )}
+                  </div>
 
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-sm font-medium">
+                      Mensagem
+                    </label>
+                    <div className="relative">
+                      <MessageSquare className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                      <Textarea
+                        id="message"
+                        {...register("message")}
+                        placeholder="Como você gostaria de apoiar o YggDrasil?"
+                        rows={5}
+                        className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6] resize-none"
+                      />
+                    </div>
+                    {errors.message && (
+                      <p className="text-sm text-destructive mt-1">
+                        {errors.message.message}
+                      </p>
+                    )}
+                  </div>
 
-      <div className="space-y-2">
-        <label htmlFor="message" className="text-sm font-medium">
-          Mensagem
-        </label>
-        <div className="relative">
-          <MessageSquare className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-          <Textarea
-            id="message"
-            {...register("message")}
-            placeholder="Como você gostaria de apoiar o YggDrasil?"
-            rows={5}
-            className="pl-10 bg-card border-border text-foreground placeholder:text-muted-foreground focus:border-[#3B82F6] resize-none"
-          />
-        </div>
-        {errors.message && (
-          <p className="text-sm text-destructive mt-1">{errors.message.message}</p>
-        )}
-      </div>
+                  <div className="pt-2">
+                    <ReCAPTCHA
+                      {...register("token")}
+                      className="g-recaptcha"
+                      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                      onChange={(token) => {
+                        setRecaptchaToken(token);
+                        if (token) setValue("token", token);
+                      }}
+                    />
+                    {errors.token && (
+                      <p className="text-sm text-destructive mt-1">
+                        {errors.token.message}
+                      </p>
+                    )}
+                  </div>
 
-      <div className="pt-2">
-        <ReCAPTCHA
-          {...register("token")}
-          className="g-recaptcha"
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-          onChange={(token) => {
-            setRecaptchaToken(token);
-            if (token) setValue("token", token);
-          }}
-        />
-        {errors.token && (
-          <p className="text-sm text-destructive mt-1">{errors.token.message}</p>
-        )}
-      </div>
-
-      <Button
-        type="submit"
-        size="lg"
-        disabled={isSubmitting}
-             variant={"default"}
-                  className="w-full bg-primary"      >
-        <ArrowRight className="ml-2 h-4 w-4" />
-        {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
-      </Button>
-    </form>
-  </CardContent>
-</Card>
-
+                  <Button
+                    type="submit"
+                    size="lg"
+                    disabled={isSubmitting}
+                    variant={"default"}
+                    className="w-full bg-primary"
+                  >
+                    <Send className="ml-2 h-4 w-4" />
+                    {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
 
             <div className="space-y-6">
               <Card className="border-0 shadow-lg">

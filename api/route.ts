@@ -1,24 +1,23 @@
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
 export async function POST(request: NextRequest) {
-  try {
-    const { email, name, message, subject } = await request.json();
+  const { email, name, message, subject } = await request.json();
 
-    const transport = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.MY_EMAIL,
-        pass: process.env.MY_PASSWORD,
-      },
-    });
+  const transport = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.MY_EMAIL,
+      pass: process.env.MY_PASSWORD,
+    },
+  });
 
-    const mailOptions: Mail.Options = {
-      from: email,
-      to: process.env.MY_EMAIL,
-      subject: `[Contato do Site] ${name}`,
-      text: `
+  const mailOptions: Mail.Options = {
+    from: email,
+    to: process.env.MY_EMAIL,
+    subject: `[Contato do Site] ${name}`,
+    text: `
 Você recebeu uma nova mensagem de contato:
 
 Nome: ${name}
@@ -28,14 +27,25 @@ Assunto: ${subject}
 
 Mensagem:
 ${message}
-      `.trim(),
-      replyTo: email,
-    };
+    `.trim(),
+    replyTo: email,
+  };
 
-    await transport.sendMail(mailOptions);
+  const sendMailPromise = () =>
+    new Promise<string>((resolve, reject) => {
+      transport.sendMail(mailOptions, function (err) {
+        if (!err) {
+          resolve("Email sent");
+        } else {
+          reject(err.message);
+        }
+      });
+    });
 
-    return NextResponse.json({ success: true, message: "Email enviado com sucesso!" });
-  } catch (error: any) {
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+  try {
+    await sendMailPromise();
+    return console.log({ message: "Email sent" });
+  } catch (err) {
+    return NextResponse.json({ error: err }, { status: 500 });
   }
 }
