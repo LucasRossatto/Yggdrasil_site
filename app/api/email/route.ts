@@ -18,18 +18,18 @@ export async function POST(request: NextRequest) {
     to: process.env.MY_EMAIL,
     subject: `[Contato do Site] ${name}`,
     text: `
-Você recebeu uma nova mensagem de contato:
+    Você recebeu uma nova mensagem de contato:
 
-Nome: ${name}
-E-mail: ${email}
+    Nome: ${name}
+    E-mail: ${email}
 
-Assunto: ${subject}
+    Assunto: ${subject}
 
-Mensagem:
-${message}
-    `.trim(),
-    replyTo: email,
-  };
+    Mensagem:
+    ${message}
+        `.trim(),
+        replyTo: email,
+      };
 
   const sendMailPromise = () =>
     new Promise<string>((resolve, reject) => {
