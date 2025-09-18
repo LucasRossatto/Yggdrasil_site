@@ -107,7 +107,7 @@ export default function SuportProjetSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                <form  method="post" onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid gap-4">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
