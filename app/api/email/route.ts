@@ -42,10 +42,10 @@ export async function POST(request: NextRequest) {
       });
     });
 
-  try {
-    await sendMailPromise();
-    return console.log({ message: "Email sent" });
-  } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
-  }
+ try {
+  await sendMailPromise();
+  return NextResponse.json({ message: "Email enviado com sucesso" }, { status: 200 });
+} catch (err) {
+  return NextResponse.json({ error: err }, { status: 500 });
+}
 }
