@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { Leaf, Menu, X, TreePine } from "lucide-react";
+import { Leaf, Menu, X } from "lucide-react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,31 +39,40 @@ export function Header() {
             />
             <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
           </div>
-          <div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent">
-              YGGDRASIL
-            </span>
-          </div>
+          <div></div>
         </div>
 
         <nav className="hidden lg:flex items-center space-x-8">
           <Link
+            href="#inicio"
+            className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1"
+          >
+            Início
+          </Link>
+          <Link
             href="#sobre"
             className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1"
           >
-            Quem Somos
+            Conheça o YggDrasil
           </Link>
           <Link
             href="#funcionamento"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
-            Funcionamento
+            Como Funciona
           </Link>
+          <Link
+            href="#aplicativo"
+            className="text-foreground hover:text-primary transition-colors font-medium"
+          >
+            Aplicativo
+          </Link>
+
           <Link
             href="#equipe"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
-            Equipe
+            Equipe YggDrasil
           </Link>
           <Link
             href="#apoiadores"
@@ -71,11 +80,25 @@ export function Header() {
           >
             Apoiadores
           </Link>
+
           <Link
-            href="#aplicativo"
+            href="#resultados"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
-            Aplicativo
+            Resultados
+          </Link>
+
+          <Link
+            href="#faq"
+            className="text-foreground hover:text-primary transition-colors font-medium"
+          >
+            FAQ
+          </Link>
+          <Link
+            href="#contato"
+            className="text-foreground hover:text-primary transition-colors font-medium"
+          >
+            Contato
           </Link>
           <ThemeToggle />
           <a href="https://painel.yggdrasil.eco.br/">
@@ -108,25 +131,39 @@ export function Header() {
         <div className="lg:hidden bg-background/95 backdrop-blur-md border-t border-border">
           <nav className="container px-4 py-6 space-y-4">
             <Link
+              href="#inicio"
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Início
+            </Link>
+            <Link
               href="#sobre"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Quem Somos
+              Conheça o YggDrasil
             </Link>
             <Link
               href="#funcionamento"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Funcionamento
+              Como Funciona
+            </Link>
+            <Link
+              href="#aplicativo"
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Aplicativo
             </Link>
             <Link
               href="#equipe"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Equipe
+              Equipe YggDrasil
             </Link>
             <Link
               href="#apoiadores"
@@ -136,11 +173,25 @@ export function Header() {
               Apoiadores
             </Link>
             <Link
-              href="#aplicativo"
+              href="#resultados"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Aplicativo
+              Resultados
+            </Link>
+            <Link
+              href="#faq"
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              FAQ
+            </Link>
+            <Link
+              href="#contato"
+              className="block text-foreground hover:text-primary transition-colors font-medium py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contato
             </Link>
             <a href="https://painel.yggdrasil.eco.br/">
               <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg mt-4">

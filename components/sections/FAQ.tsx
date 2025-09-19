@@ -43,7 +43,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-background to-primary/5 dark:from-background dark:to-primary/10">
+    <section id="faq" className="py-20 bg-gradient-to-br from-background to-primary/5 dark:from-background dark:to-primary/10">
       <div className="px-4 md:px-6">
         <div className="text-center space-y-4 mb-16">
           <Badge

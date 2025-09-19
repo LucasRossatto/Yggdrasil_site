@@ -51,7 +51,7 @@ export function AboutSection() {
             <TreePine  className="mr-2 h-4 w-4" />
             Nossa Missão
           </Badge>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">Quem Somos</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">Conheça o YggDrasil</h2>
           <p className="mx-auto max-w-3xl text-lg text-muted-foreground leading-relaxed">
             O YggDrasil é um projeto que visa aumentar o plantio e a conservação de árvores em todo o mundo, por meio de
             incentivos como criptomoedas, NFTs e créditos de carbono.
