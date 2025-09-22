@@ -12,19 +12,19 @@ export function HeroSection() {
       title: "Slide 1",
       areaLabel: "Slide 1",
       id: 1,
-      image: "/images/perspectiva-de-um-belo-dossel-de-arvores-com-um-rio.jpg",
+      image: "/images/slides/slide_b2c.jpg",
     },
     {
       title: "Slide 2",
       areaLabel: "Slide 2",
       id: 2,
-      image: "/images/slide_b2g.jpg",
+      image: "/images/slides/slide_b2g.jpg",
     },
     {
       title: "Slide 3",
       areaLabel: "Slide 3",
       id: 3,
-      image: "/images/slide_b2b.jpg",
+      image: "/images/slides/slide_b2b.jpg",
     },
   ];
   return (
