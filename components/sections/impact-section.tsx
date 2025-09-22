@@ -8,7 +8,7 @@ import CountUp from "../reactBits/CountUp";
 export function ImpactSection() {
   return (
     <>
-      <section className="py-20 bg-card">
+      <section id="resultados" className="py-20 bg-card">
         <div className="px-4 md:px-6">
           <div className="text-center space-y-4 mb-16">
             <Badge

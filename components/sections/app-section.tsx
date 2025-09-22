@@ -64,12 +64,20 @@ export function AppSection() {
             <div className="relative order-2 lg:order-1">
               <div className="relative z-10 flex justify-center">
                 <div className="relative">
-                  <div className="relative w-[360px]  aspect-[1/2]">
+                  <div className="relative w-[412px] h-[930px]">
                     <Image
-                      src="/placeholder.svg"
-                      alt="YggDrasil Mobile App"
+                      src="/images/app_mobile/tela-inicial-app-light.png"
+                      alt="YggDrasil Aplicativo Mobile"
                       fill
-                      className="rounded-3xl shadow-2xl border-8 border-gray-800 object-cover"
+                      loading="lazy"
+                      className="rounded-3xl dark:hidden shadow-2xl border-8 border-gray-800 object-cover"
+                    />
+                     <Image
+                      src="/images/app_mobile/tela-inicial-app-dark.png"
+                      alt="YggDrasil Aplicativo Mobile"
+                      loading="lazy"
+                      fill
+                      className="rounded-3xl hidden dark:block shadow-2xl border-8 border-gray-800 object-cover"
                     />
                   </div>
                   <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">

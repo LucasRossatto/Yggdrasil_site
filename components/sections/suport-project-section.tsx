@@ -96,7 +96,7 @@ export default function SuportProjetSection() {
             </p>
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-2 items-start">
+          <div id="contato" className="grid gap-8 lg:grid-cols-2 items-start">
             <Card className="border-0 shadow-xl z-10">
               <CardHeader>
                 <CardTitle className="text-center text-2xl">
