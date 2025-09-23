@@ -28,27 +28,24 @@ export function Header() {
       }`}
     >
       <div className=" flex h-20 items-center justify-between px-4 md:px-6">
-        <div className="flex items-center space-x-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg relative overflow-hidden">
-            <Image
-              src="/images/yggdrasil-logo.png"
-              alt="Yggdrasil Logo"
-              width={48}
-              height={48}
-              className="object-contain"
-            />
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+        <Link
+          href="#inicio"
+          className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1"
+        >
+          <div className="flex items-center space-x-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg relative overflow-hidden">
+              <Image
+                src="/images/yggdrasil-logo.png"
+                alt="Yggdrasil Logo"
+                width={48}
+                height={48}
+                className="object-contain"
+              />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+            </div>
           </div>
-          <div></div>
-        </div>
-
+        </Link>
         <nav className="hidden lg:flex items-center space-x-8">
-          <Link
-            href="#inicio"
-            className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1"
-          >
-            Início
-          </Link>
           <Link
             href="#sobre"
             className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1"
