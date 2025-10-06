@@ -9,8 +9,10 @@ import {
 } from "../ui/card";
 import { CheckCircle, Linkedin } from "lucide-react";
 import { Button } from "../ui/button";
+import ReadMore from "../readMore";
 
 export function TeamSection() {
+  
   return (
     <>
       <section
@@ -34,7 +36,7 @@ export function TeamSection() {
             </p>
           </div>
 
-          <div className="grid gap-8 lg:gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5  mx-auto">
+          <div className="grid gap-8 lg:gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 mx-auto">
             {[
               {
                 name: "Rodrigo Almeida",
@@ -101,7 +103,7 @@ export function TeamSection() {
                     {member.role}
                   </CardDescription>
                   <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                    {member.description}
+                   <ReadMore text={member.description} maxLength={80} />
                   </p>
                 </CardHeader>
                 <CardContent className="pt-0">
