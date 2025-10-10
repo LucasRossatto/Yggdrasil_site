@@ -47,10 +47,10 @@ export function PixDialog() {
         <div className="flex flex-col items-center justify-center mt-4">
           <div className="p-3 bg-white rounded-lg shadow-md">
             <Image
-              src="/public/images/Pix.jpg"
+              src="/images/Pix.jpg"
               alt="QR Code Pix"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               className="rounded-md object-contain"
             />
           </div>
