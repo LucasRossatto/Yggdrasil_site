@@ -14,7 +14,7 @@ export function SupportersSection() {
     },
     {
       name: "Ilumini",
-      image_path: "/images/supporters/ILUMINI-LOGO.jpg",
+      image_path: "/images/supporters/ILUMINI-LOGO.png",
     },
   ];
 
@@ -39,16 +39,13 @@ export function SupportersSection() {
         <Card className="border-0">
           <CardContent className="flex flex-wrap justify-center gap-8">
             {supporters.map((supporter, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center"
-              >
+              <div key={index} className="flex flex-col items-center">
                 <Image
                   src={supporter.image_path}
                   alt={supporter.name}
                   width={300}
-                  height={300}
-                  className="object-contain h-full mx-4 "
+                  height={100}
+                  className="h-[100px] w-auto object-contain mx-4"
                 />
               </div>
             ))}
