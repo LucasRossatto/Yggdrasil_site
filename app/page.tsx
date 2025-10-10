@@ -75,16 +75,6 @@ export default function YggdrasilRedesign() {
         </svg>
       </div>
 
-      {/* Branch divider */}
-      <div className="relative h-12 overflow-hidden">
-        <svg
-          viewBox="0 0 1200 40"
-          className="absolute inset-0 w-full h-full fill-current text-emerald-600 opacity-15"
-        >
-          <path d="M0 20 Q200 5 400 20 T800 20 T1200 20 L1200 40 L0 40 Z" />
-        </svg>
-      </div>
-
       {/* Como Funciona Section */}
       <HowItWorksSection />
 

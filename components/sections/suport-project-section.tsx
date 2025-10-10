@@ -29,6 +29,15 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendEmail } from "@/utils/send-email";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
+import { DialogHeader } from "../ui/dialog";
+import { PixDialog } from "../PixDialog";
 
 const contactSchema = z.object({
   name: z.string().min(1, "Nome é obrigatório"),
@@ -107,7 +116,11 @@ export default function SuportProjetSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <form  method="post" onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                <form
+                  method="post"
+                  onSubmit={handleSubmit(onSubmit)}
+                  className="space-y-6"
+                >
                   <div className="grid gap-4">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
@@ -227,7 +240,7 @@ export default function SuportProjetSection() {
               <Card className="border-0 shadow-lg">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
-                    <Heart className="h-6 w-6 text-red-500" />
+                    <Heart className="h-6 w-6 text-red-500" fill=""/>
                     Formas de Apoiar
                   </CardTitle>
                 </CardHeader>
@@ -272,10 +285,7 @@ export default function SuportProjetSection() {
                       </p>
                     </div>
                   </div>
-                  <a className="border-primary cursor-pointer hover:bg-accent-foreground font-bold  bg-foreground text-primary px-4 py-2 rounded-sm text-2xl  flex flex-row items-center justify-center gap-2">
-                    <HandHeart className="h-5 w-5" />
-                    <span className="text-xs">Apoiar agora</span>
-                  </a>
+                  <PixDialog/>    
                 </CardContent>
               </Card>
               <Card className="border-0 z-10 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10">
