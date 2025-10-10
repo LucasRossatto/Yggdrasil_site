@@ -49,8 +49,8 @@ export function AppSection() {
             </Badge>
             <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
               <span className="bg-foreground bg-clip-text text-transparent">
-                Nosso Aplicativo
-                <span className="text-primary font-bold">100% Gratuito</span>
+                Nosso Aplicativo 
+                 <span className="text-primary font-bold"> 100% Gratuito</span>
               </span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-[800px] mx-auto px-4">
