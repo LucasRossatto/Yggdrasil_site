@@ -240,7 +240,7 @@ export default function SuportProjetSection() {
               <Card className="border-0 shadow-lg">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
-                    <Heart className="h-6 w-6 text-red-500" fill=""/>
+                    <Heart className="h-6 w-6 text-red-500" fill="#fb2c36"/>
                     Formas de Apoiar
                   </CardTitle>
                 </CardHeader>
