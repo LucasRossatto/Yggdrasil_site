@@ -21,7 +21,11 @@ export const metadata: Metadata = {
   title: "Yggdrasil - Monitorando a Vida",
   description:
     "Revolucionando a conservação de árvores através da tecnologia blockchain",
-  generator: "v0.app",
+  generator: "Next.js",
+  authors: [{ name: "Lucas Rossatto" }],
+  icons: {
+    icon: "/images/yggdrasil-logo.png",
+  },
 };
 
 export default function RootLayout({
