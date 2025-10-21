@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Leaf, User, Camera, GraduationCap, Coins, TrendingUp, Star } from "lucide-react";
+import { Leaf, User, Camera, GraduationCap, Coins, TrendingUp, Star, Vault } from "lucide-react";
 import { StepCard } from "../StepCard";
 
 export function HowItWorksSection() {
@@ -7,9 +7,9 @@ export function HowItWorksSection() {
   const steps = [
   {
     step: "1",
-    title: "Usuário, Tokens e Créditos de Carbono",
+    title: "Usuário, Tokens e Save Credits Carbon",
     description: 
-      "Qualquer pessoa pode tokenizar uma árvore, e a partir disso, o usuário passa a possuir um ativo que gera SCC's (Save Credit Carbon), os quais o usuário tem a liberdade de vender.",
+      "Qualquer pessoa pode tokenizar uma árvore, e a partir disso, o usuário passa a possuir um ativo que gera SCC's (Save Credit Carbon) que vale 1 Kg de CO2 liberado na atmosfera, os quais o usuário tem a liberdade de vender.",
     icon: User,
     color: "from-green-500 to-emerald-500",
   },
@@ -44,6 +44,14 @@ export function HowItWorksSection() {
       "Árvores tokenizadas geram SCCs que podem ser transferidas, trazendo ganhos reais para os participantes.",
     icon: Coins,
     color: "from-emerald-500 to-teal-500",
+  },
+  {
+    step: "6",
+    title: "Carteira Valhalla",
+    description: 
+      "SCC's podem ser enviados para a cateira valhalla para diminuir sua pegada de carbono",
+    icon: Vault,
+    color: "from-red-500 to-orange-500",
   },
 ];
 
