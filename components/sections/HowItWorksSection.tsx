@@ -9,7 +9,7 @@ export function HowItWorksSection() {
     step: "1",
     title: "Usuário, Tokens e Créditos de Carbono",
     description: 
-      "Qualquer pessoa pode tokenizar uma árvore, e a partir disso, o usuário passa a possuir um ativo que gera SCC's ou (Save Credit Carbon), os quais o usuário tem a liberdade de vender.",
+      "Qualquer pessoa pode tokenizar uma árvore, e a partir disso, o usuário passa a possuir um ativo que gera SCC's (Save Credit Carbon), os quais o usuário tem a liberdade de vender.",
     icon: User,
     color: "from-green-500 to-emerald-500",
   },
@@ -17,7 +17,7 @@ export function HowItWorksSection() {
     step: "2",
     title: "Fiscalização Simplificada",
     description: 
-      "Fiscais registram fotos e informações básicas sobre as árvores usando o app. Cada avaliação gera recompensas em criptomoedas.",
+      "Qualquqer pessoa pode fiscalizar, registrando fotos e informações básicas sobre as árvores usando o app. Cada avaliação gera recompensas em YGG's (YggCoins.)",
     icon: Camera,
     color: "from-blue-500 to-indigo-500",
   },
@@ -41,7 +41,7 @@ export function HowItWorksSection() {
     step: "5",
     title: "Geração e Venda de Créditos",
     description: 
-      "Árvores validadas geram SCCs que podem ser negociados no mercado, trazendo ganhos reais para os participantes.",
+      "Árvores tokenizadas geram SCCs que podem ser transferidas, trazendo ganhos reais para os participantes.",
     icon: Coins,
     color: "from-emerald-500 to-teal-500",
   },
