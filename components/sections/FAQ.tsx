@@ -25,7 +25,7 @@ const faqs = [
       "As recompensas são baseadas na qualidade do trabalho, avaliações por estrelas da comunidade e quantidade de árvores validadas. Quanto melhor sua avaliação, maiores as recompensas.",
   },
   {
-    question: "Os créditos de carbono são reconhecidos oficialmente?",
+    question: "Os Save Credit Carbon são reconhecidos oficialmente?",
     answer:
       "Trabalhamos para garantir que nossos SCCs (Save Credit Carbon) atendam aos padrões internacionais de créditos de carbono e sejam reconhecidos no mercado global.",
   },
