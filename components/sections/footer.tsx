@@ -159,7 +159,7 @@ export function Footer() {
             </div>
             <div className="flex space-x-6">
               <div id="politicasPrivacidade">
-              <Link href="/policie-privacy" title="Políticas de privacidade">
+              <Link href="/policie-privacy" title="Políticas de privacidade" className="text-muted-foreground hover:text-green-600 text-sm transition-colors cursor-pointer">
                 Políticas de privacidade
               </Link>
               </div>
