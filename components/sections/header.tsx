@@ -29,7 +29,7 @@ export function Header() {
     >
       <div className=" flex h-20 items-center justify-between px-4 md:px-6">
         <Link
-          href="#inicio"
+          href="/#inicio"
           className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1"
         >
           <div className="flex items-center space-x-3">
@@ -47,52 +47,52 @@ export function Header() {
         </Link>
         <nav className="hidden lg:flex items-center space-x-8">
           <Link
-            href="#sobre"
+            href="/#sobre"
             className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1"
           >
             Conheça o YggDrasil
           </Link>
           <Link
-            href="#funcionamento"
+            href="/#funcionamento"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
             Como Funciona
           </Link>
           <Link
-            href="#aplicativo"
+            href="/#aplicativo"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
             Aplicativo
           </Link>
 
           <Link
-            href="#equipe"
+            href="/#equipe"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
             Equipe YggDrasil
           </Link>
           <Link
-            href="#apoiadores"
+            href="/#apoiadores"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
             Apoiadores
           </Link>
 
           <Link
-            href="#resultados"
+            href="/#resultados"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
             Resultados
           </Link>
 
           <Link
-            href="#faq"
+            href="/#faq"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
             FAQ
           </Link>
           <Link
-            href="#contato"
+            href="/#contato"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
             Contato
@@ -128,63 +128,63 @@ export function Header() {
         <div className="lg:hidden bg-background/95 backdrop-blur-md border-t border-border">
           <nav className="container px-4 py-6 space-y-4">
             <Link
-              href="#inicio"
+              href="/#inicio"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Início
             </Link>
             <Link
-              href="#sobre"
+              href="/#sobre"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Conheça o YggDrasil
             </Link>
             <Link
-              href="#funcionamento"
+              href="/#funcionamento"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Como Funciona
             </Link>
             <Link
-              href="#aplicativo"
+              href="/#aplicativo"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Aplicativo
             </Link>
             <Link
-              href="#equipe"
+              href="/#equipe"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Equipe YggDrasil
             </Link>
             <Link
-              href="#apoiadores"
+              href="/#apoiadores"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Apoiadores
             </Link>
             <Link
-              href="#resultados"
+              href="/#resultados"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Resultados
             </Link>
             <Link
-              href="#faq"
+              href="/#faq"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               FAQ
             </Link>
             <Link
-              href="#contato"
+              href="/#contato"
               className="block text-foreground hover:text-primary transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >

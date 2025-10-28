@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { TermosCondicoesPopup } from "../TermosCondicoesPopUp";
-import { PoliticaPrivacidadePopup } from "../PoliticaPrivacidade";
 
 export function Footer() {
   return (
@@ -54,50 +53,6 @@ export function Footer() {
                 Revolucionando a conservação de árvores através da tecnologia
                 blockchain e incentivos sustentáveis para um futuro mais verde.
               </p>
-              <div className="flex space-x-2">
-                <a
-                  href="https://www.instagram.com/yggdrasil.save/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram Yggdrasil"
-                  className="flex items-center justify-center h-12 w-12 rounded-full 
-               text-muted-foreground hover:text-green-600 dark:hover:text-green-400 
-               hover:bg-green-50 dark:hover:bg-green-950/50 
-               transition-colors duration-200"
-                >
-                  <InstagramIcon className="h-6 w-6" />
-                </a>
-
-                <a
-                  href="https://www.youtube.com/@YGGdrasil_Save"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="YouTube Yggdrasil"
-                  className="flex items-center justify-center h-12 w-12 rounded-full 
-               text-muted-foreground hover:text-red-600 dark:hover:text-red-400 
-               hover:bg-red-50 dark:hover:bg-red-950/50 
-               transition-colors duration-200"
-                >
-                  <Youtube className="h-7 w-7" />
-                </a>
-              </div>
-              <p>Emails</p>
-              <div className="flex flex-col gap-1 items-start">
-                <Button
-                  size="default"
-                  variant="ghost"
-                  className="text-muted-foreground hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-950/50 transition-colors"
-                >
-                  <p className="text-sm">yggdrasil.save@gmail.com</p>
-                </Button>
-                <Button
-                  size="default"
-                  variant="ghost"
-                  className="text-muted-foreground hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-950/50 transition-colors"
-                >
-                  <p className="text-sm">yggdrasil.team.contato@gmail.com</p>
-                </Button>
-              </div>
             </div>
 
             <div className="space-y-4">
@@ -168,11 +123,9 @@ export function Footer() {
                   </a>
                 </div>
               </div>
-
-            
             </div>
             <div className="space-y-4">
-               <div className="space-y-4">
+              <div className="space-y-4">
                 <h3 className="text-lg font-semibold flex items-center gap-2">
                   <Heart className="w-4 h-4 text-green-600" />
                   Contato para suporte
@@ -206,7 +159,9 @@ export function Footer() {
             </div>
             <div className="flex space-x-6">
               <div id="politicasPrivacidade">
-                <PoliticaPrivacidadePopup />
+              <Link href="/policie-privacy" title="Políticas de privacidade">
+                Políticas de privacidade
+              </Link>
               </div>
               <div id="termos&condicoes">
                 <TermosCondicoesPopup />
