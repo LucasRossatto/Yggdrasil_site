@@ -71,7 +71,7 @@ export function HeroSection() {
                   variant="default"
                   className="bg-primary cursor-pointer hover:from-primary/90 hover:to-accent/90 text-primary-foreground shadow-lg text-lg px-8 py-6 flex items-center"
                 >
-                  <a href="#funcionamento" className="flex items-center">
+                  <a  className="flex items-center">
                     <ArrowRight className="ml-2 h-5 w-5" />
                     Comece Agora
                   </a>

@@ -54,7 +54,7 @@ export function Benefits(){
                 icon: Coins,
                 title: "Recompensas Financeiras",
                 description:
-                  "Ganhe criptomoedas e créditos de carbono por suas contribuições para a conservação.",
+                  "Ganhe criptomoedas e Save Credits Carbon por suas contribuições para a conservação.",
                 color: "from-amber-500 to-orange-500",
               },
               {

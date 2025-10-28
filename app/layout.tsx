@@ -2,6 +2,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Poppins, Montserrat } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -20,7 +21,11 @@ export const metadata: Metadata = {
   title: "Yggdrasil - Monitorando a Vida",
   description:
     "Revolucionando a conservação de árvores através da tecnologia blockchain",
-  generator: "v0.app",
+  generator: "Next.js",
+  authors: [{ name: "Lucas Rossatto" }],
+  icons: {
+    icon: "/images/yggdrasil-logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -53,6 +58,7 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

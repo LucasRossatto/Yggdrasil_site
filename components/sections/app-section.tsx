@@ -67,14 +67,14 @@ export function AppSection() {
                 <div className="relative">
                   <div className="relative w-[412px] h-[930px]">
                     <Image
-                      src="/images/app_mobile/tela-inicial-app-light.png"
+                      src="/images/app_mobile/tela-inicial-app-light.jpg"
                       alt="YggDrasil Aplicativo Mobile"
                       fill
                       loading="lazy"
                       className="rounded-3xl dark:hidden shadow-2xl border-8 border-gray-800 object-cover"
                     />
                     <Image
-                      src="/images/app_mobile/tela-inicial-app-dark.png"
+                      src="/images/app_mobile/tela-inicial-app-dark.jpg"
                       alt="YggDrasil Aplicativo Mobile"
                       loading="lazy"
                       fill

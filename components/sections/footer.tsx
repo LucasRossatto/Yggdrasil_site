@@ -7,8 +7,10 @@ import {
   InstagramIcon,
   Youtube,
   Mail,
+  Share2,
 } from "lucide-react";
 import Image from "next/image";
+import { TermosCondicoesPopup } from "../TermosCondicoesPopUp";
 
 export function Footer() {
   return (
@@ -37,9 +39,9 @@ export function Footer() {
                   />
                   <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                 </div>
-                <div>
+                <div className="flex flex-col gap-3">
                   <span className="text-xl font-bold bg-gradient-to-r from-green-700 to-emerald-600 dark:from-green-400 dark:to-emerald-400 bg-clip-text text-transparent">
-                    YGGDRASIL
+                    YggDrasil
                   </span>
                   <div className="text-xs text-muted-foreground -mt-1 flex items-center gap-1">
                     <Leaf className="w-3 h-3 text-green-500 dark:text-green-400" />
@@ -51,40 +53,6 @@ export function Footer() {
                 Revolucionando a conservação de árvores através da tecnologia
                 blockchain e incentivos sustentáveis para um futuro mais verde.
               </p>
-              <div className="flex space-x-2">
-                <a
-                  href="https://www.instagram.com/yggdrasil.save/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram Yggdrasil"
-                  className="flex items-center justify-center h-12 w-12 rounded-full 
-               text-muted-foreground hover:text-green-600 dark:hover:text-green-400 
-               hover:bg-green-50 dark:hover:bg-green-950/50 
-               transition-colors duration-200"
-                >
-                  <InstagramIcon className="h-6 w-6" />
-                </a>
-
-                <a
-                  href="https://www.youtube.com/@YGGdrasil_Save"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="YouTube Yggdrasil"
-                  className="flex items-center justify-center h-12 w-12 rounded-full 
-               text-muted-foreground hover:text-red-600 dark:hover:text-red-400 
-               hover:bg-red-50 dark:hover:bg-red-950/50 
-               transition-colors duration-200"
-                >
-                  <Youtube className="h-7 w-7" />
-                </a>
-              </div>
-              <Button
-                size="default"
-                variant="ghost"
-                className="text-muted-foreground hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-950/50 transition-colors"
-              >
-                <p className="text-sm">YGGDRASIL.SAVE@GMAIL.COM</p>
-              </Button>
             </div>
 
             <div className="space-y-4">
@@ -120,97 +88,84 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold flex items-center gap-2">
-                <Leaf className="w-4 h-4 text-green-600" />
-                Recursos
-              </h3>
-              <div className="space-y-2">
-                <Link
-                  href="#"
-                  className="block text-muted-foreground hover:text-green-600 transition-colors"
-                >
-                  Documentação
-                </Link>
-                <Link
-                  href="#"
-                  className="block text-muted-foreground hover:text-green-600 transition-colors"
-                >
-                  API
-                </Link>
-                <Link
-                  href="#"
-                  className="block text-muted-foreground hover:text-green-600 transition-colors"
-                >
-                  Whitepaper
-                </Link>
-                <Link
-                  href="#"
-                  className="block text-muted-foreground hover:text-green-600 transition-colors"
-                >
-                  Blog
-                </Link>
+            <div className="space-y-6">
+              {/* Seção Redes Sociais */}
+              <div className="space-y-4">
+                <h3 className="text-lg font-semibold flex items-center gap-2">
+                  <Share2 className="w-4 h-4 text-green-600" />
+                  Redes Sociais
+                </h3>
+                <div className="flex space-x-2">
+                  <a
+                    href="https://www.instagram.com/yggdrasil.save/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram Yggdrasil"
+                    className="flex items-center justify-center h-12 w-12 rounded-full 
+         text-muted-foreground hover:text-green-600 dark:hover:text-green-400 
+         hover:bg-green-50 dark:hover:bg-green-950/50 
+         transition-colors duration-200"
+                  >
+                    <InstagramIcon className="h-6 w-6" />
+                  </a>
+
+                  <a
+                    href="https://www.youtube.com/@YGGdrasil_Save"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube Yggdrasil"
+                    className="flex items-center justify-center h-12 w-12 rounded-full 
+         text-muted-foreground hover:text-red-600 dark:hover:text-red-400 
+         hover:bg-red-50 dark:hover:bg-red-950/50 
+         transition-colors duration-200"
+                  >
+                    <Youtube className="h-7 w-7" />
+                  </a>
+                </div>
               </div>
             </div>
-
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold flex items-center gap-2">
-                <Heart className="w-4 h-4 text-green-600" />
-                Suporte
-              </h3>
-              <div className="space-y-2">
-                <Link
-                  href="#"
-                  className="block text-muted-foreground hover:text-green-600 transition-colors"
-                >
-                  Central de Ajuda
-                </Link>
-                <Link
-                  href="#"
-                  className="block text-muted-foreground hover:text-green-600 transition-colors"
-                >
-                  Comunidade
-                </Link>
-                <Link
-                  href="#"
-                  className="block text-muted-foreground hover:text-green-600 transition-colors"
-                >
-                  Contato
-                </Link>
-                <Link
-                  href="#"
-                  className="block text-muted-foreground hover:text-green-600 transition-colors"
-                >
-                  Status
-                </Link>
+              <div className="space-y-4">
+                <h3 className="text-lg font-semibold flex items-center gap-2">
+                  <Heart className="w-4 h-4 text-green-600" />
+                  Contato para suporte
+                </h3>
+                <div className="flex flex-col gap-2">
+                  <Button
+                    size="default"
+                    variant="ghost"
+                    className="text-muted-foreground hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-950/50 transition-colors justify-start"
+                  >
+                    <p className="text-sm">yggdrasil.save@gmail.com</p>
+                  </Button>
+                  <Button
+                    size="default"
+                    variant="ghost"
+                    className="text-muted-foreground hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-950/50 transition-colors justify-start"
+                  >
+                    <p className="text-sm">yggdrasil.team.contato@gmail.com</p>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
-
-          <div className="border-t border-border pt-8 mt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        </div>
+        <hr className="mx-6 md:mx-4 mt-8" />
+        <div className="container mx-4 md:px-6 relative z-10">
+          <div className="mt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground flex items-center gap-2">
               <TreePine className="w-4 h-4 text-green-600" />© 2023 YggDrasil.
               Todos os direitos reservados.
             </div>
             <div className="flex space-x-6">
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-green-600 text-sm transition-colors"
-              >
-                Política de Privacidade
+              <div id="politicasPrivacidade">
+              <Link href="/policie-privacy" title="Políticas de privacidade" className="text-muted-foreground hover:text-green-600 text-sm transition-colors cursor-pointer">
+                Políticas de privacidade
               </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-green-600 text-sm transition-colors"
-              >
-                Termos de Uso
-              </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-green-600 text-sm transition-colors"
-              >
-                Cookies
-              </Link>
+              </div>
+              <div id="termos&condicoes">
+                <TermosCondicoesPopup />
+              </div>
             </div>
           </div>
         </div>
