@@ -169,12 +169,13 @@ export function AppSection() {
                   </Button>
                   </Link>
                   <Button
+                  disabled
                     size="lg"
                     variant="default"
                     className="border-primary hover:bg-foreground/80 sm: py-4  text-primary flex-1 bg-foreground"
                   >
                     <i className="mr-2 h-5 w-5 bi bi-apple"></i>
-                    Download iOS
+                    Em breve iOS
                   </Button>
                 </div>
 
