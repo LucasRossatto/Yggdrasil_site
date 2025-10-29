@@ -8,6 +8,16 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const [chromeAllow, setChromeAllow] = useState(true);
+
+    function downloadApk() {
+    const link = document.createElement("a");
+    link.href = "/apk/Yggdrasil.apk";
+    link.download = "Yggdrasil.apk";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   useEffect(() => {
     setMounted(true);
       const link = document.createElement("a");
@@ -138,7 +148,7 @@ if (!mounted) return null;
           </ol>
 
           {/* Button */}
-          <button className="w-full bg-primary text-foreground font-semibold py-4 rounded-lg hover:bg-primary/25 transition-colors text-base cursor-pointer">
+          <button onClick={downloadApk} className="w-full bg-primary text-foreground font-semibold py-4 rounded-lg hover:bg-primary/25 transition-colors text-base cursor-pointer">
             Repetir download
           </button>
 
