@@ -107,13 +107,12 @@ export default function CountUp({
           maximumFractionDigits: hasDecimals ? maxDecimals : 0,
         };
 
-        const formattedNumber = Intl.NumberFormat("en-US", options).format(
-          latest
-        );
+        const formattedNumber = Intl.NumberFormat("pt-BR", {
+        minimumFractionDigits: maxDecimals > 0 ? maxDecimals : 0,
+        maximumFractionDigits: maxDecimals > 0 ? maxDecimals : 0,
+      }).format(latest);
 
-        ref.current.textContent = separator
-          ? formattedNumber.replace(/,/g, separator)
-          : formattedNumber;
+      ref.current.textContent = formattedNumber;
       }
     });
 
