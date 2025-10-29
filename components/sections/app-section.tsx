@@ -11,6 +11,7 @@ import {
 import { Badge } from "../ui/badge";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export function AppSection() {
   return (
@@ -157,13 +158,16 @@ export function AppSection() {
               {/* Download Section */}
               <div className="space-y-6">
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button
+
+                  <Link href={"/download/android"} >
+                      <Button
                     size="lg"
                     className="bg-primary sm: py-4 hover:from-primary/90 hover:to-secondary/90 text-primary-foreground shadow-lg flex-1"
                   >
                     <i className="bi bi-android2 mr-2 h-5 w-5"></i>
                     Download Android
                   </Button>
+                  </Link>
                   <Button
                     size="lg"
                     variant="default"
