@@ -6,15 +6,19 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
   const [chromeAllow, setChromeAllow] = useState(true);
   useEffect(() => {
+    setMounted(true);
       const link = document.createElement("a");
-      link.href = "public/apk/Yggdrasil.apk"; 
+      link.href = "/apk/Yggdrasil.apk"; 
       link.download = "Yggdrasil.apk";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     }, []);
+    
+if (!mounted) return null;
   return (
     
     <div className=" bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10 text-foreground antialiased min-h-screen flex items-center justify-center py-12 px-4">
