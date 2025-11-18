@@ -16,12 +16,12 @@ export default function ReadMore({ text, maxLength = 100 }: ReadMoreProps) {
   const displayedText = isExpanded || !isLong ? text : text.slice(0, maxLength) + "...";
 
   return (
-    <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+    <p className="text-sm text-foreground mt-2 leading-relaxed">
       {displayedText}
       {isLong && (
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="text-primary font-medium ml-1"
+          className="text-primary font-medium ml-1 cursor-pointer"
         >
           {isExpanded ? "Ver menos" : "Ver mais"}
         </button>
