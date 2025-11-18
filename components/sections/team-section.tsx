@@ -37,14 +37,14 @@ export function TeamSection() {
           </div>
 
           {/* Grid de membros */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 lg:gap-10 justify-center max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-10 justify-center items-center max-w-7xl mx-auto">
             {[
               {
                 name: "Rodrigo Almeida",
                 role: "CEO & Fundador",
                 description:
                   "Empreendedor apaixonado por construir soluções que têm como propósito o desenvolvimento da sociedade e a preservação do nosso planeta.",
-                linkedin: "#",
+                linkedin: "https://www.linkedin.com/in/rodrigo-almeida-04a5456",
                 profile_image: "/RODRIGO-ALMEIDA.jfif",
               },
               {
@@ -52,7 +52,7 @@ export function TeamSection() {
                 role: "Dev & Técnico",
                 description:
                   "Desenvolvedor especializado em sistemas com RFID e com um profundo apreço por otimizar processos usando tecnologias inovadoras.",
-                linkedin: "#",
+                linkedin: "https://www.linkedin.com/in/marlom-romero",
                 profile_image: "/MARLOM-ROMERO.png",
               },
               {
@@ -60,15 +60,33 @@ export function TeamSection() {
                 role: "Dev & Técnico",
                 description:
                   "Desenvolvedor especializado em integrar tecnologia de ponta com eficiência, criando impacto positivo e transformando desafios em oportunidades.",
-                linkedin: "#",
+                linkedin:
+                  "https://www.linkedin.com/in/dalton-kenyu-miyazato-a7112a22",
                 profile_image: "/DALTON-MIYAZATO.jpeg",
+              },
+              {
+                name: "Lucas Rossatto",
+                role: "Dev Fullstack Mobile & Técnico",
+                description:
+                  "Desenvolvedor especializado em aplicativos mobile, sites responsivos e sistemas full-stack, unindo tecnologia moderna e eficiência para entregar soluções completas e escaláveis.",
+                linkedin: "https://www.linkedin.com/in/lucasrossatto",
+                profile_image: "/LUCAS-ROSSATTO.jpg",
+              },
+              {
+                name: "Diogo Alexandrino",
+                role: "Dev & Técnico",
+                description:
+                  "Desenvolvedor Frontend especializado em criar interfaces modernas, responsivas e orientadas à experiência do usuário.",
+                linkedin: "https://www.linkedin.com/in/diogoalexandrinodias",
+                profile_image: "/DIOGO-ALEXANDRINO.png",
               },
               {
                 name: "Felipe Freisinger",
                 role: "Engenheiro Ambiental",
                 description:
                   "Engenheiro Ambiental apaixonado por criar soluções sustentáveis para impulsionar a sociedade e preservar o planeta.",
-                linkedin: "#",
+                linkedin:
+                  "https://www.linkedin.com/in/felipe-freisinger-chacon-4481b126",
                 profile_image: "/FELIPE-FREISINGER.png",
               },
               {
@@ -76,7 +94,7 @@ export function TeamSection() {
                 role: "Comunicação",
                 description:
                   "Profissional da Comunicação dedicado a construir narrativas impactantes que inspirem e conectem, alem de comunicar ideias de maneira envolvente, promovendo diálogos significativos na sociedade.",
-                linkedin: "#",
+                linkedin: "https://www.linkedin.com/in/rogério-dragone-b5a6527b",
                 profile_image: "/ROGERIO-DRAGONE.png",
               },
             ].map((member, index) => (
@@ -108,14 +126,21 @@ export function TeamSection() {
                   </p>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-full bg-transparent border-primary/20 text-primary hover:bg-primary/10"
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
                   >
-                    <Linkedin className="h-4 w-4 mr-2" />
-                    LinkedIn
-                  </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full bg-transparent border-primary/20 text-primary hover:bg-primary/10 hover:text-blue-500"
+                    >
+                      <Linkedin className="h-4 w-4 mr-2" />
+                      LinkedIn
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
