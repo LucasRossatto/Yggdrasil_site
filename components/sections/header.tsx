@@ -98,7 +98,7 @@ export function Header() {
             Contato
           </Link>
           <ThemeToggle />
-          <a href="https://painel.yggdrasil.eco.br/">
+          <a href="https://painel.yggdrasil.eco.br/" target="_blank" rel="noopener noreferrer">
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg">
               <Leaf className="mr-2 h-4 w-4" />
               Acessar plataforma
@@ -190,7 +190,7 @@ export function Header() {
             >
               Contato
             </Link>
-            <a href="https://painel.yggdrasil.eco.br/">
+            <a href="https://painel.yggdrasil.eco.br/" target="_blank" rel="noopener noreferrer">
               <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg mt-4">
                 <Leaf className="mr-2 h-4 w-4" />
                 Acessar plataforma
