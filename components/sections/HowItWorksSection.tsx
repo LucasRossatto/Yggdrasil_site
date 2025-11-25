@@ -47,9 +47,9 @@ export function HowItWorksSection() {
   },
   {
     step: "6",
-    title: "Carteira Valhalla",
+    title: "Cofre Valhalla",
     description: 
-      "SCC's podem ser enviados para a cateira valhalla para diminuir sua pegada de carbono",
+      "SCC's podem ser enviados para o Cofre valhalla para compensar sua pegada de carbono",
     icon: Vault,
     color: "from-red-500 to-orange-500",
   },
