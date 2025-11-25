@@ -39,7 +39,9 @@ export default function RootLayout({
       className={`${poppins.variable} ${montserrat.variable}`}
       suppressHydrationWarning
     >
+     
       <head>
+      
         <link
           rel="icon"
           href="/images/yggdrasil-logo.png"
@@ -50,6 +52,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
         ></link>
+        <meta name="google-adsense-account" content="ca-pub-4379608956620508"/>
       </head>
       <meta name="google-site-verification" content="N3uLTPQKKwEjJDvNBmGV4VvCp_-NaZJpm-qT15LwXuo" />
       <body>
