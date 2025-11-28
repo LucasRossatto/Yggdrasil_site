@@ -7,9 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import { CheckCircle, Linkedin } from "lucide-react";
-import { Button } from "../ui/button";
+import { CheckCircle } from "lucide-react";
 import ReadMore from "../readMore";
+import { LinkedinButton } from "../LinkedinBtn";
 
 export function TeamSection() {
   return (
@@ -132,14 +132,7 @@ export function TeamSection() {
                     rel="noopener noreferrer"
                     className="w-full"
                   >
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="w-full bg-transparent border-primary/20 text-primary hover:bg-primary/10 hover:text-blue-500"
-                    >
-                      <Linkedin className="h-4 w-4 mr-2" />
-                      LinkedIn
-                    </Button>
+                    <LinkedinButton name={member.name}/>
                   </a>
                 </CardContent>
               </Card>

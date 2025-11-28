@@ -1,22 +1,23 @@
 import React from "react";
 
-export default function Card() {
+export default function DownloadAppCard() {
   return (
-    <div className="border-border-[350px] bg-gradient-to-tr bg-background flex flex-col p-5 rounded-2xl border border-border/50">
-      <span className="text-primary text-sm font-semibold">
-        Disponível para Android e em breve IOS{" "}
+    <div className="bg-gradient-to-tr bg-background flex flex-col p-5 rounded-2xl border border-border/50 max-w-full">
+      <span className="text-primary text-xs md:text-sm font-semibold">
+        Disponível para Android e em breve IOS
       </span>
-      <span className="text-foreground text-2xl leading-6 font-semibold mt-2 mb-2">
+
+      <span className="text-foreground text-xl md:text-2xl leading-6 font-semibold mt-2 mb-2">
         Baixe agora o aplicativo do YggDrasil.
       </span>
-      <span className="text-muted-foreground text-[13px] font-semibold mb-2"></span>
 
-      <div className="flex flex-row  items-center justify-left gap-4 p-5 rounded-2xl">
-        {/* Google Play */}
+      <div className="flex flex-col md:flex-row items-start md:items-center md:justify-start gap-4 p-5 rounded-2xl w-full">
+        {/* Google Play */}
         <a
           href="https://play.google.com/store/apps/details?id=com.yggdrasil_app"
-          className="inline-flex items-center justify-center border-2 border-border rounded-full bg-background px-6 py-2.5 text-foreground transition-all duration-200 no-underline hover:bg-transparent hover:text-primary "
-          rel="noopener noreferrer" target="_blank"
+          className="inline-flex items-center justify-center border-2 border-border rounded-full bg-background px-6 py-2.5 text-foreground transition-all duration-200 hover:bg-transparent hover:text-primary w-full md:w-auto"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +34,7 @@ export default function Card() {
         </a>
 
         {/* App Store */}
-        <button className="inline-flex items-center justify-center border-2 border-border rounded-full bg-background px-6 py-2.5 text-foreground transition-all duration-200 no-underline hover:bg-transparent hover:text-primary ">
+        <button className="inline-flex items-center justify-center border-2 border-border rounded-full bg-background px-6 py-2.5 text-foreground transition-all duration-200 hover:bg-transparent hover:text-primary w-full md:w-auto">
           <svg
             width="34"
             height="34"
@@ -47,7 +48,7 @@ export default function Card() {
             />
           </svg>
           <span className="ml-4 flex flex-col items-start leading-none">
-            <span className="mb-1 text-xs">Em Breve na</span>
+            <span className="mb-1 text-xs">Em breve na</span>
             <span className="font-semibold">Apple Store</span>
           </span>
         </button>
