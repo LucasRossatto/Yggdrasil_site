@@ -139,8 +139,7 @@ export function AppSection() {
 
               {/* Downloads */}
               <div className="space-y-6">
-                             <DownloadAppCard />
-
+                <DownloadAppCard />
 
                 {/* App Stats */}
                 <div className="grid grid-cols-2 gap-4">
