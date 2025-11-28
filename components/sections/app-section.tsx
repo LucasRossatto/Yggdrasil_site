@@ -4,14 +4,13 @@ import {
   Camera,
   Coins,
   MapPin,
-  QrCode,
   Smartphone,
   Zap,
 } from "lucide-react";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
-import { Button } from "../ui/button";
-import Link from "next/link";
+
+import DownloadAppCard from "../DownloadAppCard";
 
 export function AppSection() {
   return (
@@ -140,52 +139,13 @@ export function AppSection() {
 
               {/* Downloads */}
               <div className="space-y-6">
-                <Link
-                  href="https://play.google.com/store/apps/details?id=com.yggdrasil_app"
-                  className="inline-flex items-center justify-center border-2 border-border rounded-full bg-background px-6 py-2.5 text-foreground transition-all duration-200 no-underline hover:bg-transparent hover:text-primary "
-               target="_blank" rel="noopener noreferrer"
-               >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 512 512"
-                    className="h-6 w-6"
-                  >
-                    <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
-                  </svg>
-                  <span className="ml-4 flex flex-col items-start leading-none">
-                    <span className="mb-1 text-xs">Disponível na</span>
-                    <span className="font-semibold">Google Play</span>
-                  </span>
-                </Link>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href={"https://play.google.com/store/apps/details?id=com.yggdrasil_app"} 
-                  className="flex-1" target="_blank" rel="noopener noreferrer">
-                    <Button
-                      size="lg"
-                      className="bg-primary py-4 hover:from-primary/90 hover:to-secondary/90 text-primary-foreground shadow-lg w-full"
-                    >
-                      <i className="bi bi-android2 mr-2 h-5 w-5"></i>
-                      Download Android
-                    </Button>
-                  </Link>
+                             <DownloadAppCard />
 
-                  <Button
-                    disabled
-                    size="lg"
-                    variant="default"
-                    className="border-primary hover:bg-foreground/80 py-4 text-primary flex-1 w-full bg-foreground"
-
-                  >
-                    <i className="mr-2 h-5 w-5 bi bi-apple"></i>
-                    Em breve iOS
-                  </Button>
-                </div>
 
                 {/* App Stats */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50">
-                    <div className="text-2xl font-bold text-primary">10+</div>
+                    <div className="text-2xl font-bold text-primary">100+</div>
                     <div className="text-sm text-muted-foreground">
                       Downloads
                     </div>
